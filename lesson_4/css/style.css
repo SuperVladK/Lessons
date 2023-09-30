@@ -1,0 +1,74 @@
+@import url(reset.css);
+
+* {
+   color: red;
+}
+
+p {
+   color: blue;
+}
+
+.part {
+   color: aqua;
+}
+
+[ style="font-size: larger;"] {
+   color: gold;
+}
+
+#sea {
+   color: deeppink;
+}
+
+p.sometimes {
+   color: yellow;
+}
+
+.origins-text, 
+.origins-article {
+   color: lawngreen;
+}
+
+.content-item.item {
+   color: aquamarine;
+}
+
+.content span {
+   color:coral;
+}
+
+.information .classification {
+   color: darkgoldenrod;
+}
+
+.classification-item h3 {
+   color:bisque;
+}
+
+.moonseas * {
+   color: darkkhaki;
+}
+
+.moonseas > p {
+   color: cadetblue;
+}
+
+h2 ~ ul {
+   color: orange;
+}
+
+.seaworld + h3 {
+   color: darkgreen;
+}
+
+.seaworld ~ p {
+   color: indianred;
+}
+
+.links > p > a {
+   color: aquamarine;
+}
+
+.footer .footer-list > p {
+   color: plum;
+}
