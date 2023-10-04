@@ -172,6 +172,19 @@ li p {
    margin-top: 50px;
 }
 
+.hello {
+   width: 100%;
+   height: 50px;
+   text-align: center;
+   margin-top: 20px;
+   margin-bottom: 50px;
+}
+
+.hello a {
+   display: inline-block;
+   padding: 20px;
+}
+
 .addition-container {
    width: 1110px;
    max-width: 100%;
@@ -180,7 +193,6 @@ li p {
 
 .first {
    min-width: 900px;
-   margin-top: 50px;
    margin-bottom: 50px;
    padding: 10px 10px 10px 10px;
 }
