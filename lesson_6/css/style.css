@@ -159,6 +159,7 @@ li p {
 .example {
    display: inline-block;
    width: 568px;
+   vertical-align: top;
 }
 
 .example > img {
