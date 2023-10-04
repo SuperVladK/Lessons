@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:600&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Inter:regular&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=DM+Serif+Text:regular&display=swap");
+
+@import url(reset.css);
+
+body {
+   padding: 0;
+   font-family: 'Inter', sans-serif;
+   color: #7D7D7D;
+   font-size: 18px;
+}
+
+.container {
+   width: 692px;
+   margin: 0 auto;
+}
+
+.idea {
+   margin-bottom: 42px;
+}
+
+.idea > img {
+   margin: 10px 12px 13px 0;
+}
+
+.idea > h2 {
+   color: #37393F;
+   font-family: 'Poppins', sans-serif;
+   font-size: 30px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 1.27;
+   margin-top: 24px;
+}
+
+.idea > p {
+   text-align: justify;
+   line-height: 1.46;
+}
+
+.collaboration {
+   margin-bottom: 50px;
+}
+
+.text {
+   margin-bottom: 40px;
+}
+
+.text > h3 {
+   color: #6B77E5;
+   font-family: 'Poppins', sans-serif;
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 1.27;
+   margin-bottom: 12px;
+}
+
+.text > p {
+   line-height: 1.46;
+}
+
+.benefits {
+   vertical-align: middle;
+}
+
+.benefits > img {
+   width: 330px;
+   margin-right: 26px;
+}
+
+.benefits-our {
+   display: inline-block;
+   width: 330px;
+}
+
+.benefits-our h3 {
+   color: #37393F;
+   font-family: Poppins;
+   font-size: 25px;
+   font-weight: 600;
+   line-height: 1.27;
+   margin-bottom: 15px;
+}
+
+.benefits-our > p {
+   margin-bottom: 21px;
+   color: #40DDB6;
+   font-family: Poppins;
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 1.27;
+}
+
+li {
+   vertical-align: middle;
+}
+
+li img {
+   width: 27px;
+   height: 27px;
+}
+
+li p {
+   display: inline-block;
+}
+
+.list-item {
+   margin-bottom: 30px;
+}
+
+.jewellery-container {
+   width: 1169px;
+   margin: 0 auto;
+}
+
+.occupation {
+   width: 100%;
+   vertical-align: middle;
+}
+
+.point {
+   display: inline-block;
+   width: 563px;
+   margin-right: 32px;
+}
+
+.point h3 {
+   color: #D06B00;
+   font-size: 28px;
+   line-height: normal;
+}
+
+.point h2 {
+   color: #0E333D;
+   font-family: 'DM Serif Text', sans-serif;
+   font-size: 59px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 1.46;
+   margin-bottom: 25px;
+}
+
+.point p {
+   color: #474747;
+   font-size: 20px;
+   font-weight: 400;
+   line-height: 1.8;
+   text-align: justify;
+}
+
+.example {
+   display: inline-block;
+   width: 568px;
+}
+
+.example > img {
+   width: 273px;
+   height: 518px;
+}
+
+.girl {
+   margin-right: 16px;
+}
