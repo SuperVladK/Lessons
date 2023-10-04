@@ -166,3 +166,76 @@ li p {
 .girl {
    margin-right: 16px;
 }
+
+.addition h2 {
+   text-align: center;
+   margin-top: 50px;
+}
+
+.addition-container {
+   width: 1110px;
+   max-width: 100%;
+   margin: 0 auto;
+}
+
+.first {
+   min-width: 900px;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   padding: 10px 10px 10px 10px;
+}
+
+.collapse {
+   width: 50%;
+   margin-bottom: 100px;
+}
+
+.collapsive {
+   margin-top: -140px;
+   margin-bottom: 50px;
+}
+
+.hidden {
+   height: 50px;
+   overflow: hidden;
+   margin-bottom: 50px;
+}
+
+.scroll {
+   width: 100%;
+   height: 100px;
+   overflow: scroll;
+   margin-bottom: 50px;
+
+}
+
+.visible {
+   height: 50px;
+   overflow: visible;
+}
+
+.second {
+   margin-top: 50px;
+   max-width: 900px;
+   min-width: 700px;
+   max-height: 100px;
+}
+
+.addition img {
+   width: 100%;
+}
+
+.img {
+   font-size: 0;
+   margin: 50px 15px 15px 15px;
+   padding: 10px 10px 10px 10px;
+   height: 50px;
+}
+
+.img img {
+   width: 150px;
+}
+
+.img-first {
+   margin-right: 30px;
+}
