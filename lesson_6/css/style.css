@@ -219,6 +219,7 @@ li p {
    max-width: 900px;
    min-width: 700px;
    max-height: 100px;
+   overflow: hidden;
 }
 
 .addition img {
@@ -229,7 +230,6 @@ li p {
    font-size: 0;
    margin: 50px 15px 15px 15px;
    padding: 10px 10px 10px 10px;
-   height: 50px;
 }
 
 .img img {
