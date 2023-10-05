@@ -65,16 +65,18 @@ body {
 
 .benefits {
    vertical-align: top;
-}
-
-.benefits > img {
-   width: 330px;
-   margin-right: 26px;
+   font-size: 0;
 }
 
 .benefits-our {
    display: inline-block;
    width: 330px;
+   font-size: 18px;
+}
+
+.benefits > img {
+   width: 330px;
+   margin-right: 26px;
 }
 
 .benefits-our h3 {
@@ -157,6 +159,7 @@ li p {
    display: inline-block;
    max-width: 568px;
    vertical-align: top;
+   font-size: 0;
 }
 
 .example-one,
@@ -169,7 +172,6 @@ li p {
 .example-one {
    margin-right: 8px;
 }
-
 
 .addition h2 {
    text-align: center;
