@@ -1,10 +1,10 @@
-@import url(reset.css);
-
 @import url(fonts.css);
 
 @import url(https://fonts.googleapis.com/css?family=Poppins:300,regular,500,600,600,700&display=swap);
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:600&display=swap);
+
+@import url(reset.css);
 
 body {
    font-family: 'Inter', sans-serif;
