@@ -79,7 +79,7 @@ body {
 
 .benefits-our h3 {
    color: #37393F;
-   font-family: Poppins;
+   font-family: 'Poppins', sans-serif;
    font-size: 25px;
    font-weight: 600;
    line-height: 1.27;
@@ -89,7 +89,7 @@ body {
 .benefits-our > h5 {
    margin-bottom: 21px;
    color: #40DDB6;
-   font-family: Poppins;
+   font-family: 'Poppins', sans-serif;
    font-size: 20px;
    font-weight: 600;
    line-height: 1.27;
@@ -159,14 +159,17 @@ li p {
    vertical-align: top;
 }
 
-.example > img {
+.example-one,
+.example-two {
    max-width: 273px;
-   /* height: 518px; */
+   height: 518px;
+   display: inline-block;
 }
 
-.girl {
-   margin-right: 16px;
+.example-one {
+   margin-right: 8px;
 }
+
 
 .addition h2 {
    text-align: center;
