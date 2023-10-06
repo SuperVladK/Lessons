@@ -12,8 +12,34 @@ body {
    font-size: 18px;
 }
 
+.header {
+   text-align: center;
+}
+
+.spans {
+   margin-bottom: 40px;
+}
+
+.one {
+   text-transform: uppercase;
+   font-size: 50px;
+   color: greenyellow;
+   text-shadow: 15px 15px 20px red;
+}
+
+.two {
+   font-size: 30px;
+   color: red;
+   text-shadow: 10px 10px 15px pink;
+   font-style: italic;
+}
+
+.line {
+   border: 3px dashed yellowgreen;
+}
+
 .container {
-   padding: 50px 15px;
+   padding: 50px 15px 0;
    max-width: 722px;
    margin: 0 auto;
 }
@@ -24,6 +50,7 @@ body {
 
 .idea > img {
    max-width: 100%;
+   margin-bottom: 24px;
 }
 
 .idea > h2 {
@@ -33,7 +60,6 @@ body {
    font-style: normal;
    font-weight: 600;
    line-height: 1.27;
-   margin-top: 24px;
    margin-bottom: 12px;
 }
 
@@ -42,7 +68,7 @@ body {
    line-height: 1.46;
 }
 
-.collaboration {
+.consulting {
    margin-bottom: 50px;
 }
 
@@ -114,6 +140,10 @@ li p {
    margin-bottom: 30px;
 }
 
+.jewellery {
+   margin-bottom: 50px;
+}
+
 .jewellery-container {
    max-width: 1169px;
    margin: 0 auto;
@@ -121,6 +151,7 @@ li p {
 
 .occupation {
    width: 100%;
+   font-size: 0;
 }
 
 .point {
@@ -173,7 +204,6 @@ li p {
 
 .addition h2 {
    text-align: center;
-   margin-top: 50px;
 }
 
 .hello {
@@ -252,3 +282,15 @@ li p {
    width: 150px;
 }
 
+.footer {
+   text-align: center;
+   margin-top: 50px;
+   height: 100px;
+}
+
+.footer span {
+   text-transform: uppercase;
+   font-size: 50px;
+   color: greenyellow;
+   text-shadow: 15px 15px 20px red;
+}
