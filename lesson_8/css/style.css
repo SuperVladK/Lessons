@@ -334,7 +334,6 @@ h1 {
 
 .projects_square_block h4 {
    color: #37393F;
-   font-size: 18px;
    font-weight: 500;
    display: inline-block;
    margin-bottom: 12px;
@@ -348,9 +347,8 @@ h1 {
    line-height: 1.2;
 }
 
-.projects_square_block p {
+.projects_text_one {
    color: #7D7D7D;
-   font-weight: 400;
    line-height: 1.46;
 }
 
