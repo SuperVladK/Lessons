@@ -295,13 +295,10 @@ main {
    background: url(../img/cup.svg) 0 0 / 39px 39px no-repeat;
 }
 
-.tamplate_one_more {
+.tamplate_one_more a {
    max-width: 200px;
    padding: 21px 35px 22px 35px;
    background: #6B77E5;
-}
-
-.tamplate_one_more a {
    color: #FFF;
    text-align: center;
    font-weight: 600;
