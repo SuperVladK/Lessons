@@ -1,6 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Inter:400,500,600);
+@import url(https://fonts.googleapis.com/css?family=Inter:400,500,600&display=swap);
 
-@import url(https://fonts.googleapis.com/css?family=Poppins:600,700);
+@import url(https://fonts.googleapis.com/css?family=Poppins:600,700&display=swap);
 
 @import url(fonts.css);
 
@@ -38,6 +38,10 @@ h1 {
 
 .line {
    border: 7px dashed yellowgreen;
+}
+
+main {
+   margin-bottom: 100px;
 }
 
 .gradient p {
@@ -226,13 +230,15 @@ h1 {
    max-width: 613px;
 }
 
-.list {
-   width: 398px;
+.introduce_list {
    margin-bottom: 43px;
 }
 
+.list {
+   width: 398px;
+}
+
 .list_item {
-   margin-bottom: 12px;
    padding-left: 35px;
    color: #37393F;
    font-family: 'Poppins', sans-serif;
@@ -248,7 +254,6 @@ h1 {
 .box {
    max-width: 613px;
    margin-bottom: 37px;
-   height: 140px;
 }
 
 .left_box {
@@ -291,7 +296,7 @@ h1 {
 }
 
 .tamplate_one_more {
-   width: 200px;
+   max-width: 200px;
    padding: 21px 35px 22px 35px;
    background: #6B77E5;
 }
@@ -529,7 +534,7 @@ h1 {
 
 .four_container {
    max-width: 1240px;
-   margin: 0 auto 100px;
+   margin: 0 auto;
 }
 
 .sense {
@@ -586,14 +591,14 @@ h1 {
 }
 
 .shop {
-   width: 168px;
-   height: 46px;
-   padding: 12px 44px;
-   border-radius: 8px;
-   background-color: #FFF;
+   
 }
 
 .shop a {
+   max-width: 168px;
+   padding: 12px 44px;
+   border-radius: 8px;
+   background-color: #FFF;
    color: #3C4242;
    text-align: center;
    font-size: 18px;
