@@ -81,28 +81,34 @@ main {
 }
 
 #practice_link {
-   background-color:#d8f3f7
+   background-color:#d8f3f7;
+   margin-bottom: 100px;
 }
 
 .practice_container {
    max-width: 1100px;
-   margin: 0 auto 50px;
+   margin: 0 auto;
    padding-top: 50px;
 }
 
-.practice_title {
+.practice_title,
+.tamplates_title,
+.game_title {
    text-align: center;
    text-transform: capitalize;
-   font-size: 26px;
+   color: maroon;
+   font-size: 30px;
+   text-shadow: 15px 12px 5px grey;
    text-decoration:underline;
    font-weight: 600;
+   margin-bottom: 40px;
 }
 
 .practice_classes {
    width: 450px;
 }
 
-.practice_classes > * {
+.practice_classes > *:not(:last-child) {
    margin-bottom: 20px;
 }
 
@@ -134,14 +140,12 @@ main {
 .classes_hover:hover {
    font-weight: 600;
    color: #be00ff;
-   font-size: 30px;
    text-shadow: 10px 10px 10px;
 }
 
 .classes_active:active {
    font-weight: 600;
    color: green;
-   font-size: 30px;
    text-shadow: 10px 10px 10px;
 }
 
@@ -179,6 +183,7 @@ main {
 
 .state_classes {
    max-width: 100%;
+   margin-bottom: 50px;
 }
 
 .state_classes > *:not(:last-child) {
@@ -227,7 +232,7 @@ main {
 .state_classes p::before {
    content: "";
    display: inline-block;
-   background: url(../img/vector.svg) no-repeat;
+   background: url(../img/vector.png) no-repeat;
    width: 27px;
    height: 27px;
 }
@@ -240,10 +245,11 @@ main {
 
 .block_img {
    width: 300px;
-   margin: 20px auto;
+   margin: 0 auto;
 }
 
 .image {
+   width: 100%;
    visibility: hidden;
 }
 
@@ -265,22 +271,15 @@ main {
 
 /* TAMPLATES */
 
-.tamplates_container {
+#tamplates_link {
+   margin-bottom: 100px;
+}
+
+/* TAMPLATE ONE */
+
+.tamplate_one_container {
    max-width: 692px;
-   margin: 0 auto 50px;
-}
-
-.tamplate_one {
-   margin-bottom: 50px;
-}
-
-.tamplates_title {
-   text-align: center;
-   text-transform: capitalize;
-   font-size: 26px;
-   text-decoration: underline;
-   font-weight: 600;
-   margin-bottom: 40px;
+   margin: 0 auto 100px;
 }
 
 .one_point {
@@ -357,7 +356,6 @@ main {
 .benefits_item {
    color: #7D7D7D;
    font-size: 18px;
-   line-height: 1.5;
 }
 
 .benefits_item:not(:last-child) {
@@ -366,10 +364,11 @@ main {
 
 .benefits_item::before {
    content: "";
-   background: url(../img/Vector.png) no-repeat;
-   margin-right: 8px;
+   background: url(../img/vector.png) no-repeat;
    width: 27px;
    height: 27px;
+   margin-right: 6px;
+   vertical-align: -7px;
 }
 
 .one_questions h2 {
@@ -381,6 +380,249 @@ main {
    margin-bottom: 4px;
 }
 
+/* TAMPLATE TWO */
+
+.tamplate_two_container {
+   max-width: 673px;
+   margin: 0 auto 100px;
+}
+
+.two_introduction,
+.two_points {
+   margin-bottom: 48px;
+}
+
+.two_three_title {
+   max-width: 413px;
+   text-transform: capitalize;
+   margin-bottom: 10px;
+}
+
+.two_three_title h4 {
+   color: #37393F;
+   font-weight: 500;
+   margin-bottom: 16px;
+}
+
+.two_three_title h4::before {
+   content: "";
+   background: #40DDB6;;
+   width: 12px;
+   height: 12px;
+   margin-right: 6px;
+} 
+
+.two_three_title h2 {
+   color: #37393F;
+   font-family: 'Poppins', sans-serif;
+   font-size: 40px;
+   font-weight: 700;
+   line-height: 1.2;
+}
+
+.tamplate_two p {
+   color: #7D7D7D;
+   line-height: 1.5;
+}
+
+.two_text p:not(:last-child) {
+   margin-bottom: 16px;
+}
+
+.two_points h3 {
+   text-transform: capitalize;
+   color: #37393F;
+   font-family: 'Poppins', sans-serif;
+   font-size: 20px;
+   font-weight: 600;
+   margin-bottom: 12px;
+   line-height: 1.4;
+}
+
+.points_item {
+   border: 1px solid #E3E3E3;
+   padding: 28px 39px 28px 82px;
+   background: url(../img/vector.png) 38px 28px / 27px 27px no-repeat;
+   display: inline-block;
+}
+
+.points_item:not(:last-child) {
+   margin-bottom: 31px;
+}
+
+.two_link {
+   width: 200px;
+}
+
+.two_link:hover {
+   box-shadow: 0 0 20px #6B77E5;
+}
+
+.two_link a {
+   color: #FFF;
+   text-align: center;
+   font-weight: 600;
+   text-transform: capitalize;
+   background: #6B77E5;
+   padding: 21px 35px 22px;
+}
+
+/* TAMPLATE THREE */
+
+.tamplate_three_container {
+   max-width: 1220px;
+   margin: 0 auto 100px;
+}
+
+.tamplate_three {
+   text-align: center;
+}
+
+.tamplate_three .two_three_title {
+   max-width: 100%;
+   margin-bottom: 41px;
+}
+
+.three_point {
+   font-size: 0;
+   padding-top: 36px;
+}
+
+.three_point a:hover {
+   text-shadow: 0 0 15px;
+}
+
+.three_info {
+   width: 386px;
+   padding: 58px 43px;
+   display: inline-block;
+   background: #F4F4F4;
+}
+
+.three_info img {
+   border-radius: 50%;
+   display: inline-block;
+   margin-top: -92px;
+}
+
+.three_info h3 {
+   color: #37393F;
+   font-family: 'Poppins', sans-serif;
+   font-size: 25px;
+   font-weight: 600;
+   line-height: 1.3;
+   margin-bottom: 16px;
+}
+
+.three_info p {
+   color: #7D7D7D;
+   font-size: 18px;
+   line-height: 1.5;
+   margin-bottom: 37px;
+}
+
+.three_info:not(:last-child) {
+   margin-right: 30px;
+}
+
+.three_info a {
+   color: #6B77E5;
+   font-size: 18px;
+   font-weight: 600;
+   text-transform: capitalize;
+}
+
+/* TAMPLATE FOUR */
+
+.tamplate_four_container {
+   max-width: 1214px;
+   margin: 0 auto;
+}
+
+.tamplate_four {
+   font-size: 0;
+}
+
+.tamplate_four p {
+   color: #000;
+   font-family: 'Cormorant Infant', sans-serif;
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 1.4;
+}
+
+.four_card_one {
+   max-width: 481px;
+   padding-top: 150px;
+   display: inline-block;
+   vertical-align: top;
+}
+
+.four_card_one h2 {
+   max-width: 100%;
+   color: #000;
+   font-family: 'Cormorant Infant', sans-serif;
+   font-size: 60px;
+   font-weight: 700;
+   line-height: 1.2;
+   margin-bottom: 13px;
+   text-transform: capitalize;
+}
+
+.card_one_line {
+   max-width: 304px;
+   height: 3px;
+   background: #78473B;
+}
+
+.four_card_two {
+   max-width: 334px;
+   display: inline-block;
+   padding-top: 32px;
+   margin-right: 55px;
+   vertical-align: top;
+}
+
+.card_block {
+   border: 1px solid #000;
+   margin-bottom: 34px;
+}
+
+.card_block img {
+   max-width: 100%;
+   margin-top: 10px;
+   margin-left: 9px;
+   margin-bottom: -10px;
+   margin-right: -9px;
+}
+
+.tamplate_four p:not(:last-child) {
+   margin-bottom: 4px;
+}
+
+.four_card_three {
+   max-width: 334px;
+   display: inline-block;
+   vertical-align: top;
+}
+
+.four_card_three h3 {
+   color: #000;
+   font-family: 'Cormorant Infant', sans-serif;
+   font-size: 46px;
+   font-weight: 700;
+   line-height: 1.1;
+   margin-bottom: 35px;
+}
+
+.card_link:hover {
+   box-shadow: 0 0 15px #b3a6de;
+}
+
+.card_block img:hover {
+   box-shadow: 0 0 15px #b3a6de;
+}
+
 /* GAME */
 
 .game_container {
@@ -388,27 +630,29 @@ main {
    margin: 0 auto;
 }
 
-.game_title {
+.game {
    text-align: center;
-   margin: 10px 0;
 }
 
-.game_title > h2 {
-   font-size: 26px;
-   font-weight: 600;
-   margin-bottom: 20px;
+/* .game_title {
+   text-align: center;
    text-transform: capitalize;
+   font-size: 30px;
+   text-shadow: 15px 12px 5px grey;
    text-decoration: underline;
-}
+   font-weight: 600;
+   margin-bottom: 40px;
+} */
 
-.game_title h3 {
+.game h3 {
    text-align: center;
    text-transform: capitalize;
    font-weight: 600;
    font-size: 26px;
+   margin-bottom: 10px;
 }
 
-.game_title > h3 a {
+.game > h3 a {
    font-size: 30px;
    color: #e51111;
    text-shadow: 10px 10px 10px;
@@ -521,3 +765,16 @@ main {
    visibility: visible;
 }
 
+.footer {
+   background-color: blanchedalmond;
+   padding: 30px;
+}
+
+.footer p {
+   text-align: center;
+   color: #be00ff;
+   text-shadow: 10px 10px 20px;
+   font-size: 30px;
+   font-weight: 600;
+   text-transform: uppercase;
+}
