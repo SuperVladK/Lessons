@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:500,600,700&display=swap);
+
+@import url(reset.css);
+
+body {
+   max-width: 100%;
+   font-size: 35px;
+   color: yellowgreen;
+   font-weight: 700;
+}
+
+.header_container {
+   background: linear-gradient(0deg, rgba(207, 226, 17, 0.8968181022408963) 9%, rgba(11, 244, 163, 0.9682466736694678) 57%, rgba(90, 209, 83, 1) 85%, rgba(172, 209, 83, 1) 95%);
+   text-align: center;
+   padding: 30px 0;
+   border-bottom: 10px dotted red;
+}
+
+h1 {
+   font-size: 50px;
+   font-weight: 600;
+   text-transform: uppercase;
+   font-style: italic;
+   margin-bottom: 20px;
+   color: red;
+   text-shadow: 15px 15px 10px violet;
+}
+
+.header_container p {
+   font-size: 40px;
+   font-weight: 500;
+   text-transform: capitalize;
+   font-style: italic;
+   text-shadow: 15px 15px 10px violet;
+   color: red;
+}
+
+/* MAIN */
+
+.only {
+   background-color: beige;
+}
+
+.only__container {
+   max-width: 1100px;
+   margin: 0 auto;
+   padding: 30px ;
+}
+
+.vector__icons,
+.vector__images,
+.only__rastr {
+   padding: 15px;
+   margin-bottom: 30px;
+   border: 2px solid greenyellow;
+   border-radius: 20px;
+   background-color: rgba(54, 11, 194, 0.7);
+   box-shadow: 10px 10px 15px;
+}
+
+h3 {
+   margin-bottom: 40px;
+   text-decoration: underline;
+}
+
+img {
+   max-width: 100%;
+   margin-bottom: 30px;
+}
+
+.vector__icons img {
+   margin-right: 10px;
+}
+
+.vector__images img {
+   margin-right: 5px;
+}
+
+.footer {
+   background-color: blanchedalmond;
+   padding: 30px;
+}
+
+.footer p {
+   text-align: center;
+   color: #be00ff;
+   text-shadow: 10px 10px 20px;
+   font-size: 30px;
+   font-weight: 600;
+   text-transform: uppercase;
+}
