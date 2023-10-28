@@ -44,19 +44,24 @@ h1 {
 .only__container {
    max-width: 1100px;
    margin: 0 auto;
-   padding: 30px ;
+   padding: 35px ;
 }
 
 .vector__icons,
 .vector__images,
 .only__rastr {
    padding: 15px;
-   margin-bottom: 30px;
    border: 2px solid greenyellow;
    border-radius: 20px;
    background-color: rgba(54, 11, 194, 0.7);
    box-shadow: 10px 10px 15px;
 }
+
+.vector__icons,
+.vector__images {
+   margin-bottom: 30px;
+}
+
 
 h3 {
    margin-bottom: 40px;
