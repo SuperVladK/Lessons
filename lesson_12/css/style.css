@@ -177,19 +177,19 @@ body {
    font-weight: 400;
    color: black;
    text-align: center;
-   /* position: relative; */
+   position: relative;
+   margin-right: 10px;
 }
 
 .left__sticky {
    max-width: 100%;
-   position: relative;
-   top: 0;
-   left: 0;
+   position: sticky;
    border: 2px solid black;
    padding: 10px;
 }
 
 .left__title {
+   width: 100%;
    margin-bottom: 20px;
    text-transform: capitalize;
    position: sticky;
@@ -212,10 +212,6 @@ body {
    text-align: center;
    position: relative;
 }
-/* 
-.right__simple {
-   position: relative;
-} */
 
 .right__static {
    background-color: aqua;
@@ -253,52 +249,148 @@ body {
 
 
 .right__z-index {
-   position: static;
+   position: relative;
 }
 
-.right__z-index--red {
+.right__index--red {
    width: 300px;
    height: 300px;
    background-color: red;
    position: absolute;
-   top: 350px;
+   top: 150px;
    left: 50px;
    z-index: 4;
 }
 
-.right__z-index--blue{
+.right__index--blue{
    width: 300px;
    height: 300px;
    background-color: blue;
    position: absolute;
-   top:400px;
+   top:200px;
    left: 100px;
    z-index: 3;
 
 }
 
-.right__z-index--green{
+.right__index--green{
    width: 300px;
    height: 300px;
    background-color: green;
    position: absolute;
-   top: 450px;
+   top: 250px;
    left: 150px;
    z-index: 2;
 }
 
-.right__z-index--yellow{
+.right__index--yellow{
    width: 300px;
    height: 300px;
    background-color: yellow;
    position: absolute;
-   top: 500px;
+   top: 300px;
    left:200px;
    z-index: 1;
 }
 
-/* [class^="right__z-index"] {
-   height: 300px;
-   width: 300px;
-   position: absolute; 
-} */
+/* TAMPLATE */
+
+.tamplate__container {
+   max-width: 1220px;
+   margin: 0 auto;
+}
+
+.cards__raw {
+   font-size: 0;
+}
+
+.cards__raw:not(:last-child) {
+   margin-bottom: 31px;
+}
+
+.card {
+   display: inline-block;
+   position: relative;
+   margin-right: 20px;
+}
+
+.card:hover .card__img::before {
+   opacity: 1;
+}
+
+.card:hover .card__socials {
+   visibility: visible;
+   opacity: 1;
+}
+
+.card__img {
+   max-width: 386px;
+   height: 532px;
+   vertical-align: top;
+}
+
+.card__img::before {
+   content: "";
+   width: 100%;
+   height: 100%;
+   background-color: rgba(107, 119, 229, 0.7);
+   opacity: 0;
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+.card__pic {
+   max-width: 100%;
+   height: 100%;
+}
+
+.card__socials {
+   visibility: hidden;
+   position: absolute;
+   top: 241px;
+   left: 108px;
+}
+
+.socials__item {
+   display: inline-block;
+   border-radius: 50%;
+}
+
+.socials__item:not(:last-child) {
+   margin-right: 13px;
+}
+
+.socials__link {
+   display: block;
+}
+
+.socials__img {
+   width: 45px;
+   height: 45px;
+}
+
+.card__name {
+   width: 341px;
+   position: absolute;
+   top: 396px;
+   left: 22px;
+   background-color: #fff;
+   padding: 24px 40px;
+   text-align: center;
+}
+
+.card__name h2 {
+   color: #37393F;
+   font-family: 'Poppins', sans-serif;
+   font-size: 25px;
+   font-weight: 600;
+   margin-bottom: 4px;
+}
+
+.card__name h3 {
+   color: #7D7D7D;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 1.4;
+}
