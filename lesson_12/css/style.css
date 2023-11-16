@@ -193,6 +193,8 @@ body {
    margin-bottom: 20px;
    text-transform: capitalize;
    position: sticky;
+   background-color: bisque;
+   line-height: 2;
 }
 
 .left__text {
