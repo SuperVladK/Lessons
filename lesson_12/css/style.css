@@ -148,42 +148,46 @@ body {
 .position__container {
    max-width:1220px;
    margin: 0 auto;
-   padding-top: 180px;
-   padding-bottom: 600px;
+   padding-bottom: 100px;
    min-height: 100%;
 }
 
 .practice {
+   max-width: 100%;
+   padding-top: 150px;
    font-size: 0;
    position: relative;
 }
 
 .practice__title {
+   max-width: 100%;
+   height:120px;
    text-align: center;
    text-transform: uppercase;
-   font-size: 30px;
-   font-weight: 500;
-   margin-bottom: 30px;
+   font-size: 40px;
+   font-weight: 600;
+   padding-top: 50px;
+   margin-bottom: 130px;
    position: sticky;
-   top: 0;
-
+   top: 135px;
+   background-color: chocolate;
 }
 
 .left {
    width: 400px;
+   height: 800px;
    display: inline-block;
    vertical-align: top;
    font-size: 26px;
-   font-weight: 400;
    color: black;
-   text-align: center;
    position: relative;
    margin-right: 10px;
 }
 
 .left__sticky {
-   max-width: 100%;
+   width: 100%;
    position: sticky;
+   top: 250px;
    border: 2px solid black;
    padding: 10px;
 }
@@ -192,7 +196,9 @@ body {
    width: 100%;
    margin-bottom: 20px;
    text-transform: capitalize;
+   text-align: center;
    position: sticky;
+   top: 250px;
    background-color: bisque;
    line-height: 2;
 }
@@ -217,7 +223,7 @@ body {
 
 .right__static {
    background-color: aqua;
-   width: 100%;
+   max-width: 100%;
    height: 100px;
    position: static;
 }
