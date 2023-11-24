@@ -254,8 +254,6 @@ body {
    left: 20px;
 }
 
-
-
 .right__z-index {
    position: relative;
 }
@@ -358,6 +356,7 @@ body {
    position: absolute;
    top: 241px;
    left: 108px;
+   overflow: hidden;
 }
 
 .socials__item {
@@ -379,9 +378,9 @@ body {
 }
 
 .card__name {
-   width: 341px;
+   width: 88.4%;
    position: absolute;
-   top: 396px;
+   bottom: 22px;
    left: 22px;
    background-color: #fff;
    padding: 24px 40px;
