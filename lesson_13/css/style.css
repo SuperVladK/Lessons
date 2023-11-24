@@ -1,0 +1,866 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap);
+
+@import url(reset.css);
+
+body {
+   font-family: 'Poppins', sans-serif;
+   font-weight: 600;
+}
+
+.wrapper {
+   overflow: clip;
+   min-height: 100%;
+}
+
+/* HEADER */
+
+.header {
+   width: 100%;
+   background: linear-gradient(0deg, rgba(238, 174, 202, 0.7917760854341737) 0%, rgba(147, 58, 213, 0.9066220238095238) 50%, rgba(148, 187, 233, 0.8590029761904762) 100%);
+   margin-bottom: 50px;
+}
+
+.header__container {
+   max-width: 100%;
+}
+
+.header__title {
+   text-align: center;
+   text-transform: uppercase;
+   font-style: italic;
+   text-shadow: 10px 10px 7px;
+   color: yellowgreen;
+   padding: 20px;
+}
+
+.header__title h1 {
+   font-size: 30px;
+   font-weight: 600;
+   margin-bottom: 20px;
+}
+
+.header__title h2 {
+   font-size: 20px;
+   font-weight: 500;
+}
+
+/* MAIN */
+
+/* TRANSFORMATIONS */
+
+.transformations__container {
+   width: 1220px;
+   margin: 0 auto;
+   margin-bottom: 50px;
+}
+
+.transformations__title {
+   text-transform: uppercase;
+   text-align: center;
+   margin-bottom: 20px;
+   font-size: 36px;
+}
+
+.transformations__subtitle {
+   text-transform: uppercase;
+   margin-bottom: 30px;
+   font-size: 24px;
+}
+
+.transformations__raw {
+   font-size: 0;
+}
+
+.transformations__raw:not(:last-child) {
+   margin-bottom: 50px;
+}
+
+.d2-example__item-list {
+   display: inline-block;
+   margin-right: 100px;
+   margin-bottom: 50px;
+}
+
+.d2-example__item-list:nth-child(5),
+.d2-example__item-list:nth-child(6) {
+   margin-bottom: 0;
+}
+
+.d2-example__block {
+   width: 200px;
+   height: 200px;
+   background-color: darkgray;
+   border-radius: 10px;
+}
+
+.d2-example__block:nth-child(5),
+.d2-example__block:nth-child(6) {
+   margin-bottom: 0;
+}
+
+.d2-example__list-item {
+   width: 100%;
+   height: 100%;
+   border-radius: 10px;
+   background-color: yellowgreen;
+   position: relative;
+}
+
+.d2-example__text,
+.d3-example__text {
+   visibility: hidden;
+   padding-top: 30px;
+   font-size: 24px;
+   top: 30px;
+   text-align: center;
+   text-transform: capitalize;
+}
+
+.d2-example__block:hover .d2-example__text,
+.d3-example__block:hover .d3-example__text {
+   visibility: visible;
+}
+
+.d2-example__block:hover .d2-example__list-item,
+.d3-example__block:hover .d3-example__list-item {
+   opacity: 0.8;
+}
+
+.d2-example__block--translate:hover .d2-example__list-item {
+   transform: translate(20px,20px);
+}
+
+.d2-example__block--rotate:hover .d2-example__list-item {
+   transform: rotate(360deg);
+   transition-duration: 2s;
+}
+
+.d2-example__block--scale:hover .d2-example__list-item {
+   transform: scale(-0.7);
+}
+
+.d2-example__block--skew:hover .d2-example__list-item {
+   transform: skew(10deg, 10deg);
+   transform-origin: 0 0;
+}
+
+.d2-example__block--origin:hover .d2-example__list-item {
+   transform-origin: 100% 0 ;
+   transform: rotate(-35deg);
+   transition-duration: 1s;
+}
+
+.d2-example__block--multy:hover .d2-example__list-item {
+   transform: translate(10px, 10px) rotate(30deg) scale(0.5) skewX(-15deg);
+}
+
+.d3-example__item-list {
+   display: inline-block;
+   margin-right: 100px;
+   margin-bottom: 50px;
+   vertical-align: bottom;
+}
+
+.d3-example__item-list:nth-child(5),
+.d3-example__item-list:nth-child(6),
+.d3-example__item-list:nth-child(7),
+.d3-example__item-list:nth-child(8) {
+   margin-bottom: 0;
+}
+
+.d3-example__block {
+   width: 200px;
+   height: 200px;
+   background-color: darkgray;
+   border-radius: 10px;
+   perspective: 100px;
+   perspective-origin: 70% 30%;
+}
+
+.d3-example__list-item {
+   width: 100%;
+   height: 100%;
+   border-radius: 10px;
+   background-color: yellowgreen;
+   position: relative;
+}
+
+.d3-example__block:nth-child(4) {
+   perspective: 100px;
+   perspective-origin: center;
+}
+
+.d3-example__block:nth-child(5) {
+   transform-style: flat;
+}
+
+.d3-example__block:nth-child(6) .d3-example__list-item {
+   transform-style: preserve-3d;
+   background-color: rgba(168, 168, 168, 0.3);
+}
+
+.d3-example__block--translate:hover .d3-example__list-item {
+   transform: translate3d(50px, 30px, 20px);
+   transition: 1.5s;
+}
+
+.d3-example__block--rotate:hover .d3-example__list-item {
+   transform: rotate3d(20, 20, 50, 360deg);
+   transition: 1s;
+}
+
+.d3-example__block--scale:hover .d3-example__list-item {
+   transform: scale3d(1.5, 1.5, 2);
+   transition: 1s;
+}
+
+.d3-example__block--wars:hover .d3-example__list-item {
+   transform: rotate3d(50, 0, 0, 30deg);
+   transition: 1s;
+}
+
+.d3-example__block--flat:hover .d3-example__list-item {
+   transform: rotateY(180deg);
+   transition: 1s;
+}
+
+.d3-example__block--preserve:hover .d3-example__list-item {
+   transform: rotateY(360deg);
+   backface-visibility: hidden;
+   transition: 1s;
+}
+
+.d3-example__block--origin:hover .d3-example__list-item {
+   transform-origin: 100% 0;
+   transform: rotate3d(20, 20, 50, -30deg);
+   transition: 1s;
+}
+
+.d3-example__flip {
+   width: 200px;
+   height: 200px;
+   display: inline-block;
+   position: relative;
+   vertical-align: bottom;
+   transform-style: preserve-3d;
+   border-radius: 10px;
+   overflow: hidden;
+}
+
+.flip__back {
+   width: 100%;
+   height: 100%;
+   background-color: darkgray;
+   position: absolute;
+   top: 0;
+   left: 0;
+   padding-top: 30px;
+   font-size: 24px;
+   text-align: center;
+   text-transform: capitalize;
+   transition: 0.5s ease;
+}
+
+.flip__front {
+   width: 100%;
+   height: 100%;
+   background-color: yellowgreen;
+   position: absolute;
+   top: 0;
+   left: 0;
+   padding-top: 30px;
+   font-size: 24px;
+   text-align: center;
+   text-transform: capitalize;
+   transition: 0.5s ease;
+   backface-visibility: hidden;
+}
+
+.d3-example__flip:hover .flip__front {
+   transform: rotateY(180deg);
+}
+
+.d3-example__flip:hover .flip__back {
+   transform: rotateY(360deg);
+}
+
+/* ENTERTAINMENT */
+
+.entertainment__container {
+   max-width: 1440px;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+.picture__sky {
+   max-width: 100%;
+   height: 500px;
+   background-color: darkblue;
+   position: relative;
+   perspective: 100px;
+}
+
+.sky__cloud {
+   max-width: 500px;
+   height: 100px;
+   position: absolute;
+   top: 150px;
+   left: 50px;
+}
+
+.sky__cloud-2 {
+   max-width: 500px;
+   height: 100px;
+   position: absolute;
+   top: 50px;
+   left: 550px;
+}
+
+.cloud__item {
+   width: 350px;
+   height: 60px;
+   background-color: darkgray;
+   position: absolute;
+   border-radius: 50%;
+   top: 50px;
+   left: 0px;
+}
+
+.sky__cloud:hover {
+   transform: translate3d(20px, 20px, 10px);
+}
+
+.sky__cloud-2:hover {
+   transform: translate3d(60px, 40px, 10px);
+}
+
+.sky__cloud .cloud__item,
+.sky__cloud-2 .cloud__item {
+   box-shadow: 3px 3px 15px darkgray, 0 3px 15px darkgray, 3px 0 50px darkgray;
+}
+
+.cloud__item--1 {
+   width: 80px;
+   height: 45px;
+   top: 30px;
+   left: 70px;
+}
+
+.cloud__item--2 {
+   width: 100px;
+   height: 50px;
+   top: 20px;
+   left: 125px;
+}
+
+.cloud__item--3 {
+   width: 100px;
+   height: 50px;
+   top: 35px;
+   left: 200px;
+}
+
+.cloud__item--4 {
+   width: 100px;
+   height: 50px;
+   top: 70px;
+   left: 70px;
+}
+.cloud__item--5 {
+   width: 100px;
+   height: 50px;
+   top: 65px;
+   left: 160px;
+}
+
+.cloud__item--6 {
+   width: 100px;
+   height: 50px;
+   top: 35px;
+   left: 200px;
+}
+
+.sky__moon {
+   width: 300px;
+   height: 200px;
+   position: relative;
+   top: 150px;
+   left: 1000px;
+   
+}
+
+.moon__pic {
+   transform: rotate(15deg);
+}
+
+.moon__full {
+   width: 100px;
+   height: 100px;
+   position: absolute;
+   top: 0;
+   left: 70px;
+   background-color: darkblue;
+   border-radius: 60%;
+}
+
+.moon__bright {
+   width: 100px;
+   height: 100px;
+   position: absolute;
+   top: 0;
+   left: 100px;
+   background-color:rgb(237, 237, 178);
+   border-radius: 50%;
+   box-shadow: 0 4px 5px gold, 0 -4px 5px gold, 4px 0 5px gold;
+   
+}
+
+.star-sky__list-item {
+   position: absolute;
+   top: 70px;
+   left: 150px;
+}
+
+.star-sky__list-item:nth-child(2) {
+   position: absolute;
+   top: 90px;
+   left: 1210px;
+}
+
+.star-sky__list-item:nth-child(3) {
+   position: absolute;
+   top: 310px;
+   left: 370px;
+}
+
+.star-sky__list-item:nth-child(4) {
+   position: absolute;
+   top: 140px;
+   left: 450px;
+}
+
+.star-sky__list-item:nth-child(5) {
+   position: absolute;
+   top: 270px;
+   left: 690px;
+}
+
+.star-sky__list-item:nth-child(6) {
+   position: absolute;
+   top: 320px;
+   left: 1090px;
+}
+
+.star-sky__list-item:nth-child(7) {
+   position: absolute;
+   top: 200px;
+   left: 990px;
+}
+
+.star-sky__list-item:nth-child(8) {
+   position: absolute;
+   top: 370px;
+   left: 180px;
+}
+
+.item__star:hover {
+   transform: rotate(360deg);
+   transition: 1s;
+}
+
+.item__star {
+   width: 12px;
+   height: 12px;
+}
+
+.star__item {
+   width: 6px;
+   height: 6px;
+   position: absolute;
+   background-color: rgb(221, 221, 214);
+}
+
+.star__item--1 {
+   transform: rotate(40deg) skew(60deg, 40deg);
+}
+
+.star__item--2 {
+   transform: rotate(80deg) skew(60deg, 40deg);
+}
+
+.star__item--3 {
+   transform: rotate(140deg) skew(60deg, 40deg);
+}
+
+.picture__ground {
+   width: 100%;
+   height: 150px;
+   position: relative;
+}
+
+.grass {
+   max-width: 100%;
+   height: 100%;
+   background-color: green;
+}
+
+.picture__road {
+   max-width: 100%;
+   height: 100px;
+   background-color: grey;
+   position: relative;
+}
+
+.road__strip {
+   max-width: 100%;
+   height: 1px;
+   border: 5px dashed white;
+   position: relative;
+   top: 45%;
+}
+
+.moon__man {
+   max-width: 70px;
+   height: 70px;
+   position: absolute;
+   top: 46px;
+   left: 120px;
+} 
+
+.man__head {
+   width: 8px;
+   height: 8px;
+   border-radius: 50%;
+   background-color: aliceblue;
+}
+
+.man__neck {
+   width: 4px;
+   height: 3px;
+   background-color: aliceblue;
+   position: absolute;
+   top: 7px;
+   left: 2px;
+}
+
+.man__body {
+   width: 8px;
+   height: 20px;
+   background-color: aliceblue;
+   position: absolute;
+   top: 10px;
+   left: 0;
+   border-radius: 4px;
+}
+
+.man__hand {
+   width: 4px;
+   height: 20px;
+   position: absolute;
+   top: 10px;
+   left: 2px;
+   background-color: aliceblue;
+}
+
+.man__hand--right {
+   transform-origin: 0 0;
+   transform: rotate(-35deg);
+}
+
+.man__hand--left {
+   transform-origin: 100% 0;
+   transform: rotate(35deg);
+}
+
+.man__leg {
+   width: 4px;
+   height: 20px;
+   position: absolute;
+   top: 26px;
+   left: 2px;
+   background-color: aliceblue;
+}
+
+.man__leg--right {
+   transform-origin: 0 0;
+   transform: rotate(-30deg);
+}
+
+.man__leg--left {
+   transform-origin: 100% 0;
+   transform: rotate(30deg);
+}
+
+.man__stick {
+   width: 120px;
+   height: 2px;
+   background-color: #fff;
+   position: absolute;
+   top: 25px;
+   left: -125px;
+   transform-origin: right;
+}
+
+.moon__man:hover .man__stick {
+   transform: rotate(10deg);
+   transition: 1s;
+   visibility: visible;
+   opacity: 1;
+}
+
+.house {
+   width: 300px;
+   height: 250px;
+   position: absolute;
+   left: 220px;
+   bottom: 100px;
+}
+
+.house__base {
+   width: 200px;
+   height: 150px;
+   background-color: pink;
+   position: absolute;
+   bottom: 0;
+   left: 50px;
+   /* perspective: 100px;
+   perspective-origin: 100% 0; */
+   transform-style: flat;
+}
+
+.house__smoke {
+   width: 25px;
+   position: absolute;
+   left: 180px;
+   top: 0;
+}
+
+.house:hover .smoke__house {
+   visibility: visible;
+}
+
+.smoke__house {
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background-color: lightgray;
+   position: absolute;
+   box-shadow: 3px 3px 10px lightgray, -3px -3px 15px lightgray;
+   visibility: hidden;
+}
+
+.smoke__house--1 {
+   left: 5px;
+   top: 5px;
+}
+
+.smoke__house--2 {
+   left: 10px;
+   top: -5px;
+}
+
+.smoke__house--3 {
+   left: 0;
+   top: 0;
+}
+
+.smoke__house--4 {
+   left: 6px;
+   top: -2px;
+}
+
+.smoke__house--5 {
+   left: 11px;
+   top: 3px;
+}
+
+.house__roof {
+   width: 0;
+   height: 0;
+   border-left: 150px solid transparent;
+   border-bottom: 50px solid red;
+   border-right: 150px solid transparent;
+   position: absolute;
+   top: 50px;
+   left: 0;
+}
+
+.house__tube-roof {
+   width: 25px;
+   height: 45px;
+   position: absolute;
+   top: 30px;
+   left: 180px;
+   background-color: rgb(211, 113, 113);
+}
+
+.window__house {
+   width: 60px;
+   height: 60px;
+   background-color: rgb(241, 250, 215);
+   position: absolute;
+   top: 40px;
+   left: 20px;
+   padding: 7px;
+}
+
+.window__part {
+   width: 20px;
+   height: 20px;
+   background-color: darkslategray;
+   display: inline-block;
+}
+
+.window__house:hover .window__part {
+   background-color: yellow;
+}
+
+.window__part--up-left,
+.window__part--down-left {
+   margin-right: 2px;
+}
+
+.house__corridor {
+   width: 100%;
+   height: 100%;
+   background-color: rgb(77, 57, 32);
+   position: absolute;
+   bottom: 0;
+   right: 0;
+}
+
+.house__door {
+   width: 100%;
+   height: 70px;
+   background-color: rgb(169, 106, 23);
+   position: absolute;
+   bottom: 10px;
+   right: 0;
+}
+
+.house__entrance {
+   width: 40px;
+   height: 80px;
+   position: absolute;
+   bottom: 0;
+   right: 30px;
+}
+
+.house__entrance:hover .house__door {
+   transform: rotate3d(0, 180, 0, 130deg);
+   transform-origin: right;
+   transition: 0.6s;
+}
+
+.house__entrance:hover .house__corridor {
+   background-color: yellow;
+   transition: 1.5s;
+}
+
+.house__porch {
+   width: 50px;
+   height: 10px;
+   background-color: brown;
+   position: absolute;
+   bottom: 0;
+   right: -5px;
+}
+
+.picture__tree{
+   width: 100%;
+   position: absolute;
+   left: 0;
+   bottom: 150px;
+}
+
+.picture__tree:hover .tree__apples {
+   transform: scale(1.5);
+} 
+
+.tree__list {
+   width: 100%;
+   height: inherit;
+   position: absolute;
+}
+
+.tree__item {
+   width: 60px;
+   height: 150px;
+   position: absolute;
+   perspective: 100px;
+   perspective-origin: bottom;
+}
+
+.tree__item--1 {
+   left: 650px;
+   top: -80px;
+}
+
+.tree__item--2 {
+   left: 870px;
+   top: -100px;
+}
+
+.tree__item--3 {
+   left: 1190px;
+   top: -80px;
+}
+
+.tree__trunk {
+   width: 20px;
+   height: 40px;
+   background-color: brown;
+   position: absolute;
+   top: 70px;
+   left: 20px;
+   transform: rotate3d(50, 0, 0, 20deg);
+}
+
+.tree__leaves {
+   width: 60px;
+   height: 80px;
+   border-radius: 30px;
+   background-color: rgb(98, 152, 22);
+   position: absolute;
+}
+
+.tree__apples {
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background-color: red;
+   position: absolute;
+   
+}
+
+.tree__apples--1 {
+   top: 5px;
+   left: 10px;
+}
+
+.tree__apples--2 {
+   top: 37px;
+   left: 12px;
+}
+
+.tree__apples--3 {
+   top: 49px;
+   left: 42px;
+}
+
+.tree__apples--4 {
+   top: 16px;
+   left: 30px;
+}
+
+.tree__apples--5 {
+   top: 5px;
+   left: 45px;
+}
+
+.tree__apples--6 {
+   top: 56px;
+   left: -2px;
+}
+
+/* FOOTER */
