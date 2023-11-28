@@ -604,8 +604,6 @@ body {
 .moon__man:hover .man__stick {
    transform: rotate(10deg);
    transition: 1s;
-   visibility: visible;
-   opacity: 1;
 }
 
 .house {
@@ -623,8 +621,6 @@ body {
    position: absolute;
    bottom: 0;
    left: 50px;
-   /* perspective: 100px;
-   perspective-origin: 100% 0; */
    transform-style: flat;
 }
 
@@ -861,6 +857,205 @@ body {
 .tree__apples--6 {
    top: 56px;
    left: -2px;
+}
+
+.road__car {
+   width: 320px;
+   height: 170px;
+   position: absolute;
+   left: 800px;
+   bottom: 10px;
+}
+
+.road__car:hover {
+   transform: scale(0.9) translate(150px, 0);
+}
+
+.item-roof__frame {
+   width: 230px;
+   height: 50px;
+   background-color: darkred;
+   position: relative;
+   border-radius: 15% 50% 0 0 / 100% 140% 0 0;;
+}
+
+.frame__window-front {
+   width: 70px;
+   height: 45px;
+   background-color: aliceblue;
+   position: absolute;
+   top: 5px;
+   left: 155px;
+   display: inline-block;
+   border-radius: 0 120% 0 0  / 0 120% 0 0 ;
+}
+
+.frame__window-middle {
+   width: 70px;
+   height: 45px;
+   background-color: aliceblue;
+   position: absolute;
+   top: 5px;
+   left: 80px;
+   display: inline-block;
+}
+
+.frame__window-back {
+   width: 70px;
+   height: 45px;
+   background-color: aliceblue;
+   position: absolute;
+   top: 5px;
+   left: 5px;
+   display: inline-block;
+   border-radius: 35% 0 0 0 / 60% 0 0 0;
+}
+
+.item-body {
+   width: 230px;
+   height: 60px;
+   background-color: darkred;
+   position: relative;
+}
+
+.item-body__handle-front {
+   width: 20px;
+   height: 6px;
+   background-color: darkslategrey;
+   position: absolute;
+   left: 155px;
+   top: 5px;
+}
+
+.item-body__handle-back {
+   width: 20px;
+   height: 6px;
+   background-color: darkslategrey;
+   position: absolute;
+   left: 80px;
+   top: 5px;
+}
+
+.item-body__nose {
+   width: 80px;
+   height: 60px;
+   background-color: darkred;
+   position: absolute;
+   left: 220px;
+   border-radius: 0 200% 0 0 / 0 100% 0 0;
+}
+
+.nose__lights {
+   width: 40px;
+   height: 15px;
+   background-color: aliceblue;
+   position: absolute;
+   top: 15px;
+   left: 40px;
+   border-radius: 0 70% 0 0 / 0 70% 0 0;
+}
+
+.item-body__lights-back {
+   width: 10px;
+   height: 15px;
+   background-color: red;
+   position: absolute;
+   top: 15px;
+   left: 0;
+   border-radius: 0 0 0 0 / 0 0 0 0;
+}
+
+.item-chassis {
+   width: 300px;
+   height: 5px;
+   background-color: silver;
+   position: relative;
+   top: -5px;
+   border-radius: 0 0 50px 30px;
+}
+
+.item-body__bumper-front {
+   width: 40px;
+   height: 20px;
+   background-color: brown;
+   position: absolute;
+   left: 263px;
+   top: 35px;
+   border-radius: 0 2px 2px 0;
+}
+
+.item-body__bumper-back {
+   width: 30px;
+   height: 20px;
+   background-color: brown;
+   position: absolute;
+   left: -5px;
+   top: 35px;
+   border-radius: 3px 0 0 3px;
+}
+
+.item-chassis__wheel {
+   width: 50px;
+   height: 50px;
+}
+
+.wheel__circle {
+   width: 50px;
+   height: 50px;
+   background-color: black;
+   border-radius: 50%;
+   position: absolute;
+}
+
+.wheel__circle:hover {
+   transform: rotate(360deg);
+}
+
+.wheel__circle--front {
+   left: 190px;
+   bottom: -25px;
+}
+
+.wheel__circle--back {
+   bottom: -25px;
+   left: 30px;
+}
+
+.wheel__disc {
+   width: 35px;
+   height: 35px;
+   background-color: coral;
+   position: absolute;
+   border-radius: 50%;
+   top: 7px;
+   left: 7px;
+}
+
+.wheel__axis {
+   width: 15px;
+   height: 15px;
+   background-color: black;
+   position: absolute;
+   border-radius: 50%;
+   top: 35%;
+   left: 35%;
+}
+
+.wheel__stick {
+   width: 5px;
+   height: 45px;
+   background-color: black;
+   position: absolute;
+   top: 3px;
+   left: 22px;
+}
+
+.wheel__stick--2 {
+   transform: rotate(60deg);
+}
+
+.wheel__stick--3 {
+   transform: rotate(120deg);
 }
 
 /* FOOTER */
