@@ -121,14 +121,13 @@ body {
    color: black;
    text-transform: capitalize;
    transition-duration: 0.8s;
-   transition-property: font-size, color;
+   transition-property: color;
    transition-delay: 0.3s, 0.4s;
 }
 
 .d2-example__block:hover .d2-example__text,
 .d3-example__block:hover .d3-example__text {
    visibility: visible;
-   font-size: 34px;
    color: blue;
 }
 
