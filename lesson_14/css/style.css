@@ -10,8 +10,13 @@ body {
 .wrapper {
    overflow: clip;
    min-height: 100%;
+   display: flex;
+   flex-direction: column;
 }
 
+.wrapper > main {
+   flex-grow: 1;
+}
 /* HEADER */
 
 .header {
@@ -315,6 +320,7 @@ body {
    box-shadow: 0 10px 10px green;
    position: relative;
    top: 0;
+   cursor: pointer;
 }
 
 .animation__link:hover {
@@ -334,8 +340,13 @@ body {
    margin: 0 auto;
 }
 
+.picture {
+   width: 1440px;
+   overflow: hidden;
+}
+
 .picture__sky {
-   max-width: 100%;
+   width: 1440px;
    height: 450px;
    background-color: aliceblue;
    position: relative;
@@ -630,31 +641,28 @@ body {
 }
 
 .picture__ground {
-   width: 100%;
+   max-width: 1440px;
    height: 150px;
-   position: absolute;
 }
 
 .grass {
-   max-width: 100%;
+   width: 1440px;
    height: 100%;
    background-color: green;
 }
 
 .picture__road {
-   width: 100%;
+   width: 1440px;
    height: 100px;
    background-color: grey;
-   position: absolute;
-   bottom: 0;
 }
 
 .road__strip {
-   max-width: 100%;
+   max-width: 1440px;
    height: 1px;
    border: 5px dashed white;
    position: relative;
-   top: 45%;
+   top: 45px;
 }
 
 .sky__man {
@@ -807,7 +815,7 @@ body {
    height: 250px;
    position: absolute;
    left: 220px;
-   bottom: 70px;
+   bottom: 170px;
 }
 
 .house__base {
@@ -1060,7 +1068,7 @@ body {
    width: 100%;
    position: absolute;
    left: 0;
-   bottom: 150px;
+   bottom: 200px;
 }
 
 .picture__tree:hover .tree__apples {
@@ -1156,10 +1164,11 @@ body {
 .road__car {
    width: 320px;
    height: 170px;
-   position: absolute;
-   left: -300px;
-   bottom: -20px;
+   position: relative;
+   left: -320px;
+   top: -70px;
    animation: car-go 9s linear 22s forwards;
+   z-index: 3;
 }
 
 @keyframes car-go {
