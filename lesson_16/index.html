@@ -36,18 +36,22 @@
                      <form action="#" method="POST" enctype="multipart/form-data" class="form__pack">
                         <div class="form__line">
                            <input type="text" placeholder="Your Name" name="name" required>
+                        </div>
+                        <div class="form__line">
                            <input type="email" placeholder="Email Address" name="email" required>
                         </div>
                         <div class="form__line">
                            <input type="number" placeholder="Phone Number" name="Phone" required>
-                           <input type="text" placeholder="Subject" name="subject" required>
                         </div>
                         <div class="form__line">
-                           <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Message..."></textarea>
+                           <input type="text" placeholder="Subject" name="subject" required>
+                        </div>
+                        <div class="form__area">
+                           <textarea name="textarea" class="form__textarea" cols="140" rows="10" placeholder="Message..."></textarea>
                         </div>
                      </form>
                      <div class="form__button button">
-                        <button type="submit" class="submit">
+                        <button type="submit" class="button__submit">
                            Submit
                         </button>
                      </div>
