@@ -124,12 +124,12 @@ body {
 
 .form__line {
    display: flex;
-   flex: 0 1 auto;
-   flex-wrap: wrap;
+   flex: 0 1 591px;
 }
 
 .form__line input {
-   width: 591px;
+   display: flex;
+   flex: 1 0 auto;
    height: 65px;
    border: 1px solid #DDD;
    background: #F8F8F8;
@@ -141,7 +141,8 @@ body {
 }
 
 .form__area {
-   width: 1220px;
+   display: flex;
+   flex: 1 1 auto;
    height: 222px;
 }
 
