@@ -35,38 +35,350 @@
                   <div class="call-back__form form">
                      <form action="#" method="POST" enctype="multipart/form-data" class="form__pack">
                         <div class="form__line">
-                           <input type="text" placeholder="Your Name" name="name" required>
+                           <input type="text"   placeholder="Your Name" name="name" required tabindex="1">
                         </div>
                         <div class="form__line">
-                           <input type="email" placeholder="Email Address" name="email" required>
+                           <input type="email" name="email"  placeholder="Email Address"  required tabindex="2">
                         </div>
                         <div class="form__line">
-                           <input type="number" placeholder="Phone Number" name="Phone" required>
+                           <input type="tel"   placeholder="Phone Number" name="Phone" required tabindex="3" maxlength="13">
                         </div>
                         <div class="form__line">
-                           <input type="text" placeholder="Subject" name="subject" required>
+                           <input type="text" name="subject"  placeholder="Subject" required tabindex="4">
                         </div>
                         <div class="form__area">
-                           <textarea name="textarea" class="form__textarea" cols="140" rows="10" placeholder="Message..."></textarea>
+                           <textarea name="textarea" class="form__textarea" placeholder="Message..." tabindex="5"></textarea>
+                        </div>
+                        <div class="form__buttonn button-form">
+                           <button type="submit" name="button"  class="button-form__submit" tabindex="6">
+                           Submit
+                           </button>
                         </div>
                      </form>
-                     <div class="form__button button">
-                        <button type="submit" class="button__submit">
-                           Submit
-                        </button>
-                     </div>
                   </div>
                </div>
             </div>
          </section>
-         <section class="order-form">
-            <div class="order-form__container">
-
+         <section class="order-data">
+            <div class="order-data__container">
+               <h2 class="order-data__title">
+                  My Info
+               </h2>
+               <h3 class="order-data__subtitle">
+                  Add Address
+               </h3>
+               <div class="order-data__info info-order">
+                  <form action="#" method="post" enctype="multipart/form-data" class="info-order__form">
+                     <div class="info-order__data data-order">
+                        <div class="data-order__pack pack-order">
+                           <h4 class="pack-order__title">
+                              First Name*
+                           </h4>
+                           <input type="text" name="name"  placeholder="First Name" class="pack-order__input" required tabindex="7">
+                        </div>
+                        <div class="data-order__pack pack-order">
+                           <h4 class="pack-order__title">
+                              Last Name*
+                           </h4>
+                           <input type="text" name="last_name"  placeholder="Last Name" class="pack-order__input" required tabindex="8">
+                        </div>
+                        <div class="data-order__pack pack-order">
+                           <h4 class="pack-order__title">
+                              Country / Region*
+                           </h4>
+                           <input type="text" name="country"  placeholder="Country / Region" class="pack-order__input" required tabindex="9">
+                        </div>
+                        <div class="data-order__pack pack-order">
+                           <h4 class="pack-order__title">
+                              Company Name
+                           </h4>
+                           <input type="text" name="company"  placeholder="Company (optional)" class="pack-order__input" required tabindex="10">
+                        </div>
+                        <div class="data-order__pack pack-order">
+                           <h4 class="pack-order__title">
+                              Street Address*
+                           </h4>
+                           <input type="text" name="street_address"  placeholder="House number and street name" class="pack-order__input" required tabindex="11">
+                        </div>
+                        <div class="data-order__pack pack-order">
+                           <h4 class="pack-order__title">
+                              Apt, suite, unit
+                           </h4>
+                           <input type="text" name="address"  placeholder="apartment, suite, unit, etc. (optional)" class="pack-order__input" required tabindex="12">
+                        </div>
+                        <div class="data-order__pack pack-order">
+                           <h4 class="pack-order__title">
+                              City*
+                           </h4>
+                           <input type="text" name="city"  placeholder="Town / City" class="pack-order__input" required tabindex="13">
+                        </div>
+                        <div class="data-order__pack pack-order">
+                           <h4 class="pack-order__title">
+                              State*
+                           </h4>
+                           <select class="pack-order__input" name="state" required tabindex="14">
+                              <option value="">-----</option>
+                              <option value="">Michigan</option>
+                              <option value="">Arizona</option>
+                              <option value="">Texas</option>
+                           </select>
+                        </div>
+                        <div class="data-order__pack pack-order">
+                           <h4 class="pack-order__title">
+                              Phone*
+                           </h4>
+                           <input type="tel" name="phone"  placeholder="Phone" class="pack-order__input" required tabindex="15">
+                        </div>
+                        <div class="data-order__pack pack-order">
+                           <h4 class="pack-order__title">
+                              Postal Code*
+                           </h4>
+                           <input type="number" name="code"  placeholder="Postal Code" class="pack-order__input" required tabindex="16">
+                        </div>
+                     </div>
+                     <div class="info-order__textarea textarea-order">
+                        <h4 class="textarea-order__title">
+                           Delivery Instruction
+                        </h4>
+                        <textarea name="delivery-instruction" id="info-order__textarea" placeholder="Delivery-instruction" tabindex="17"></textarea>
+                     </div>
+                     <div class="info-order__checkbox checkbox-order">
+                        <div class="checkbox-order__input input-order">
+                           <input type="checkbox" name="shipping" value="shipping" id="shipping" tabindex="18" class="input-order__tick">
+                           <label for="shipping" class="input-order__label">Set as default shipping address</label>
+                        </div>
+                        <div class="checkbox-order__input input-order">
+                           <input type="checkbox" name="billing" value="billing" id="billing" tabindex="19" class="input-order__tick">
+                           <label for="billing" class="input-order__label">Set as default billing address</label>
+                        </div>
+                     </div>
+                     <div class="info-order__button button">
+                        <button type="submit" class="button__submit" tabindex="20">
+                           Save
+                        </button>
+                        <button type="reset" class="button__reset" tabindex="21">
+                           Cancel
+                        </button>
+                     </div>
+                  </form>
+               </div>
             </div>
          </section>
-         <section class="payment-form">
-            <div class="payment-form__container">
-               
+         <section class="payment-data">
+            <div class="payment-data__container">
+               <h2 class="payment-data__title">
+                  Check Out
+               </h2>
+               <h3 class="payment-data__subtitle">
+                  Billing Details
+               </h3>
+               <div class="payment-data__way way">
+                  <div class="way__billing billing">
+                     <form action="#" method="post" enctype="multipart/form-data" class="billing__form form-billing">
+                        <div class="form-billing__details details-billing">
+                           <div class="details-billing__pack pack-billing">
+                              <h4 class="pack-billing__title">
+                                 First Name*
+                              </h4>
+                              <input type="text" name="name"  placeholder="First Name" class="pack-billing__input" required tabindex="22">
+                           </div>
+                           <div class="details-billing__pack pack-billing">
+                              <h4 class="pack-billing__title">
+                                 Last Name*
+                              </h4>
+                              <input type="text" name="last_name"  placeholder="Last Name" class="pack-billing__input" required tabindex="23">
+                           </div>
+                        </div>
+                        <div class="form-billing__details details-billing">   
+                           <div class="details-billing__pack pack-billing">
+                              <h4 class="pack-billing__title">
+                                 Country / Region*
+                              </h4>
+                              <input type="text" name="country"  placeholder="Country / Region" class="pack-billing__input" required tabindex="24">
+                           </div>
+                           <div class="details-billing__pack pack-billing">
+                              <h4 class="pack-billing__title">
+                                 Company Name
+                              </h4>
+                              <input type="text" name="city"  placeholder="Company (optional)" class="pack-billing__input" required tabindex="25">
+                           </div>
+                        </div>
+                        <div class="form-billing__details details-billing">
+                           <div class="details-billing__pack pack-billing">
+                              <h4 class="pack-billing__title">
+                                 Street Address*
+                              </h4>
+                              <input type="text" name="street_address"  placeholder="House number and street name" class="pack-billing__input" required tabindex="26">
+                           </div>
+                           <div class="details-billing__pack pack-billing">
+                              <h4 class="pack-billing__title">
+                                 Apt, suite, unit
+                              </h4>
+                              <input type="text" name="address"  placeholder="apartment, suite, unit, etc. (optional)" class="pack-billing__input" required tabindex="27">
+                           </div>
+                        </div>
+                        <div class="form-billing__details details-billing">
+                           <div class="details-billing__pack pack-billing">
+                              <h4 class="pack-billing__title">
+                                 City*
+                              </h4>
+                              <input type="text" name="city"  placeholder="Town / City" class="pack-billing__input" required tabindex="28">
+                           </div>
+                           <div class="details-billing__pack pack-billing">
+                              <h4 class="pack-billing__title">
+                                 State*
+                              </h4>
+                              <select class="pack-billing__input" name="state-list" required tabindex="29">
+                                 <option value="">-----</option>
+                                 <option value="">Michigan</option>
+                                 <option value="">Arizona</option>
+                                 <option value="">Texas</option>
+                              </select>
+                           </div>
+                           <div class="details-billing__pack pack-billing">
+                              <h4 class="details-billing__title">
+                                 Postal Code*
+                              </h4>
+                              <input type="number" name="code"  placeholder="Postal Code" class="pack-billing__input" required tabindex="30">
+                           </div>
+                        </div>
+                        <div class="form-billing__details details-billing">
+                           <div class="details-billing__pack pack-billing">
+                              <h4 class="pack-billing__title">
+                                 Phone*
+                              </h4>
+                              <input type="tel" name="phone"  placeholder="Phone" class="pack-billing__input" required tabindex="31">
+                           </div>
+                        </div>
+                        <div class="form-billing__details details-billing">
+                           <div class="details-billing__pack pack-billing">
+                              <div class="form-billing__button button-billing">
+                                 <button type="submit" class="button-billing__submit" tabindex="32">
+                                    Continue to delivery
+                                 </button>
+                              </div>
+                              <div class="form-billing__details details-billing">
+                                 <div class="details-billing__input input-save">
+                                    <input type="checkbox" name="save" value="save" id="save" tabindex="33" class="input-save__tick">
+                                    <label for="save">Save my information for a faster checkout</label>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="way__payment payment">
+                     <form action="#" method="POST" enctype="multipart/form-data" class="payment__form form">
+                        <div class="form__block block-form">
+                           <h3 class="block-form__title">
+                              Shipping Address
+                           </h3>
+                           <h4 class="block-form__subtitle">
+                              Select the address that matches your card or payment method.
+                           </h4>
+                           <div class="block-form__box box">
+                              <div class="box__line line">
+                                 <input type="radio" id="bill-add" name="address" value="01" class="line__input" checked tabindex="34">
+                                 <label for="bill-add" class="line__label"><span class="line__label-title">Same as Billing address</span></label>
+                              </div>
+                              <div class="box__line line" id="second">
+                                 <input type="radio" id="ship-add" name="address" value="02" class="line__input" checked tabindex="35">
+                                 <label for="ship-add" class="line__label"><span class="line__label-title">Use a different shipping address</span></label>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="form__block block-form">
+                           <h3 class="block-form__title">
+                              Shipping Method
+                           </h3>
+                           <div class="block-form__box box">
+                              <div class="box__line line">
+                                 <h3 class="line__label-title">
+                                    Arrives by Monday, June 7
+                                 </h3>
+                              </div>
+                              <div class="box__line line">
+                                 <div class="line-block">
+                                    <h3 class="line-block__label-title">
+                                       Delivery Charges
+                                    </h3>
+                                    <h3 class="line-block__label-title">
+                                       $5.00
+                                    </h3>
+                                 </div>
+                                 <h4 class="line__label-subtitle">
+                                    Additional fess may apply
+                                 </h4>
+                              </div>
+                           </div>
+                        </div>   
+                        <div class="form__block block-form">
+                           <h3 class="block-form__title">
+                              Payment Method
+                           </h3>
+                           <h4 class="block-form__subtitle">
+                              All transactions are secure and encrypted.
+                           </h4>
+                           <div class="block-form__box box">
+                              <div class="box__line line">
+                                 <input type="radio" id="credit" name="method" value="01" class="line__input" checked tabindex="36">
+                                 <label for="credit" class="line__label">
+                                    <span class="line__label-title">Credit Card
+                                    </span>
+                                 </label>
+                                 <span class="line__label-subtitle">We accept all major credit cards.
+                                 </span>
+                                 <div class="line__label-icon icon">
+                                    <ul class="icon__list">
+                                       <li class="icon__item"><img src="img/pay-icon.svg" alt="pay-icon">
+                                       </li>
+                                       <li class="icon__item"><img src="img/visa-icon.svg" alt="pay-icon">
+                                       </li>
+                                       <li class="icon__item"><img src="img/paypal-icon.svg" alt="pay-icon">
+                                       </li>
+                                       <li class="icon__item"><img src="img/paypal-icon.svg" alt="pay-icon">
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 <div class="line__label-pole pole">
+                                    <div class="pole__box">
+                                       <input type="text" class="pole__input" placeholder="Card number" required tabindex="37">
+                                    </div>
+                                    <div class="pole__box">
+                                       <input type="text" class="pole__input" placeholder="Name of card" required tabindex="38">
+                                    </div>
+                                    <div class="pole__box">
+                                       <input type="text" class="pole__input" placeholder="Expiration date (MM/YY)" required tabindex="39">
+                                    </div>
+                                    <div class="pole__box">
+                                       <input type="text" class="pole__input" placeholder="Security Code" required tabindex="40">
+                                       <a href="#"><img src="img/eye-icon.svg" alt="icon" class="pole__input-img"></a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="box__line line">
+                                 <input type="radio" id="card" name="method" value="02" class="line__input" checked>
+                                  <label for="card" class="line__label">
+                                    <span class="line__label-title" >Cash on delivery
+                                    </span>
+                                 </label>
+                                 <span class="line__label-subtitle" id="cash">Pay with cash upon delivery.
+                                 </span>
+                              </div>
+                              <div class="box__line line">
+                                 <input type="radio" id="pol" name="method" value="03" class="line__input" checked">
+                                 <label for="pol" class="line__label"><span class="line__label-title">Paypol</span></label>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="form__button button">
+                           <button type="submit" class="button__submit" tabindex="41">
+                              Pay Now
+                           </button>
+                        </div>
+                     </form>   
+                  </div>
+               </div>
             </div>
          </section>
       </main>
