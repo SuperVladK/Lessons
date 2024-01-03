@@ -516,6 +516,10 @@ textarea {
    padding-bottom: 0;
 }
 
+.box__line {
+   position: relative;
+}
+
 .box__line:first-child {
    padding-bottom: 25px;
    border-bottom: 1px solid #BEBCBD;
@@ -567,7 +571,6 @@ textarea {
    height: 12px;
    border-radius: 50%;
    background-color: #000;
-   transition: 0.3s;
 }
 
 label {
