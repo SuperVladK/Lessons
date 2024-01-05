@@ -1,0 +1,176 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:400,800&display=swap);
+
+@import url(https://fonts.googleapis.com/css?family=DM+Serif+Text:400&display=swap);
+
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:500&display=swap);
+
+@import url(https://fonts.googleapis.com/css?family=Cormorant+Infant:700&display=swap);
+
+@import url(reset.css);
+
+body {
+   font-family: 'DM Serif Text', sans-serif;
+   font-weight: 400;
+   max-width: 100%;
+}
+
+.wrapper {
+   overflow: clip;
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+
+.wrapper > main {
+   flex-grow: 1;
+}
+/* HEADER */
+
+.header {
+   width: 100%;
+   background: linear-gradient(0deg, rgba(238, 174, 202, 0.7917760854341737) 0%, rgba(147, 58, 213, 0.9066220238095238) 50%, rgba(148, 187, 233, 0.8590029761904762) 100%);
+}
+
+.header__container {
+   max-width: 100%;
+}
+
+.header__title {
+   text-align: center;
+   text-transform: uppercase;
+   font-style: italic;
+   text-shadow: 10px 10px 7px;
+   color: yellowgreen;
+   padding: 20px;
+}
+
+.header__title h1 {
+   font-size: 30px;
+   font-weight: 600;
+   margin-bottom: 20px;
+}
+
+.header__title h2 {
+   font-size: 20px;
+   font-weight: 500;
+}
+
+/* MAIN */
+
+/* SECTION 1 */
+
+.page__engagement-rings {
+   padding: 125px 0 114px;
+   background: #FEFAF4;
+}
+
+.rings-engagement__container {
+   max-width: 1197px;
+   padding: 0 15px;
+   margin: 0 auto;
+   position: relative;
+}
+
+.block__name {
+   display: flex;
+   flex: 0 1 581px;
+   flex-direction: column;
+   align-items: center;
+   row-gap: 27px;
+   margin-bottom: 29px;
+}
+
+.block__name--engagement {
+   align-items: start;
+}
+
+.block__title {
+   color: #000;
+   font-family: DM Serif Text;
+   font-size: 58px;
+}
+
+.block__subtitle {
+   color: #606060;
+   font-family: 'Inter', sans-serif;
+   font-size: 20px;
+   line-height: 1.8;
+}
+
+.block__card {
+   display: flex;
+   margin: 0 -24px;
+   flex-direction: row;
+   flex-wrap: wrap;
+}
+
+.card__box {
+   flex: 0 1 33.33%;
+   padding: 24px;
+}
+
+.card__img {
+   width: 100%;
+   aspect-ratio: 357 / 240;
+   object-fit: cover;
+   margin-bottom: 16px;
+}
+
+.card__title {
+   flex: 0 1 auto;
+   color: #000;
+   font-size: 24px;
+   line-height: 1.2;
+   margin-bottom: 16px;
+}
+
+.card__text {
+   color: #000;
+   font-family: 'Inter', sans-serif;
+   font-size: 16px;
+   line-height: 1.6;
+   margin-bottom: 8px;
+}
+
+.card__link {
+   display: flex;
+   flex: 0 1 auto;
+   gap: 30px;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.link__name {
+   color: #F55529;
+   font-family: 'Inter', sans-serif;
+   font-size: 16px;
+   font-weight: 800;
+   line-height: 1.5;
+} 
+
+.rings-engagement__img {
+   position: absolute;
+   right: 0;
+   top: 469px;
+   width: 171.323px;
+   height: 384.891px;
+}
+
+/* FOOTER */
+
+.footer {
+   width: 100%;
+   background: linear-gradient(0deg, rgba(238, 174, 202, 0.7917760854341737) 0%, rgba(147, 58, 213, 0.9066220238095238) 50%, rgba(148, 187, 233, 0.8590029761904762) 100%);
+}
+
+.footer__title {
+   text-align: center;
+   text-transform: uppercase;
+   font-style: italic;
+   text-shadow: 10px 10px 7px;
+   color: yellowgreen;
+   padding: 20px;
+   font-size: 30px;
+   font-weight: 600;
+   margin-bottom: 20px;
+}
