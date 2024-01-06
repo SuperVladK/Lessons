@@ -71,52 +71,52 @@
                   <form action="#" method="post" enctype="multipart/form-data" class="info-order__form">
                      <div class="info-order__data data-order">
                         <div class="data-order__pack pack-order">
-                           <h4 class="pack-order__title">
+                           <label for="name" class="pack-order__title">
                               First Name*
-                           </h4>
-                           <input type="text" name="name"  placeholder="First Name" class="pack-order__input" required tabindex="7">
+                           </label>
+                           <input id="name" type="text" name="name"  placeholder="First Name" class="pack-order__input" required tabindex="7">
                         </div>
                         <div class="data-order__pack pack-order">
-                           <h4 class="pack-order__title">
+                           <label for="last_name" class="pack-order__title">
                               Last Name*
-                           </h4>
-                           <input type="text" name="last_name"  placeholder="Last Name" class="pack-order__input" required tabindex="8">
+                           </label>
+                           <input id="last_name" type="text" name="last_name"  placeholder="Last Name" class="pack-order__input" required tabindex="8">
                         </div>
                         <div class="data-order__pack pack-order">
-                           <h4 class="pack-order__title">
+                           <label for="country" class="pack-order__title">
                               Country / Region*
-                           </h4>
-                           <input type="text" name="country"  placeholder="Country / Region" class="pack-order__input" required tabindex="9">
+                           </label>
+                           <input id="country" type="text" name="country"  placeholder="Country / Region" class="pack-order__input" required tabindex="9">
                         </div>
                         <div class="data-order__pack pack-order">
-                           <h4 class="pack-order__title">
+                           <label for="company" class="pack-order__title">
                               Company Name
-                           </h4>
-                           <input type="text" name="company"  placeholder="Company (optional)" class="pack-order__input" required tabindex="10">
+                           </label>
+                           <input id="company" type="text" name="company"  placeholder="Company (optional)" class="pack-order__input" required tabindex="10">
                         </div>
                         <div class="data-order__pack pack-order">
-                           <h4 class="pack-order__title">
+                           <label for="house" class="pack-order__title">
                               Street Address*
-                           </h4>
-                           <input type="text" name="street_address"  placeholder="House number and street name" class="pack-order__input" required tabindex="11">
+                           </label>
+                           <input id="house" type="text" name="street_address"  placeholder="House number and street name" class="pack-order__input" required tabindex="11">
                         </div>
                         <div class="data-order__pack pack-order">
-                           <h4 class="pack-order__title">
+                           <label for="address" class="pack-order__title">
                               Apt, suite, unit
-                           </h4>
-                           <input type="text" name="address"  placeholder="apartment, suite, unit, etc. (optional)" class="pack-order__input" required tabindex="12">
+                           </label>
+                           <input id="address" type="text" name="address"  placeholder="apartment, suite, unit, etc. (optional)" class="pack-order__input" required tabindex="12">
                         </div>
                         <div class="data-order__pack pack-order">
-                           <h4 class="pack-order__title">
+                           <label for="city" class="pack-order__title">
                               City*
-                           </h4>
-                           <input type="text" name="city"  placeholder="Town / City" class="pack-order__input" required tabindex="13">
+                           </label>
+                           <input id="city" type="text" name="city"  placeholder="Town / City" class="pack-order__input" required tabindex="13">
                         </div>
                         <div class="data-order__pack pack-order">
-                           <h4 class="pack-order__title">
+                           <label for="state" class="pack-order__title">
                               State*
-                           </h4>
-                           <select class="pack-order__input" name="state" required tabindex="14">
+                           </label>
+                           <select id="state" class="pack-order__input" name="state" required tabindex="14">
                               <option value="">-----</option>
                               <option value="">Michigan</option>
                               <option value="">Arizona</option>
@@ -124,22 +124,22 @@
                            </select>
                         </div>
                         <div class="data-order__pack pack-order">
-                           <h4 class="pack-order__title">
+                           <label for="tel" class="pack-order__title">
                               Phone*
-                           </h4>
-                           <input type="tel" name="phone"  placeholder="Phone" class="pack-order__input" required tabindex="15">
+                           </label>
+                           <input id="tel" type="tel" name="phone"  placeholder="Phone" class="pack-order__input" required tabindex="15">
                         </div>
                         <div class="data-order__pack pack-order">
-                           <h4 class="pack-order__title">
+                           <label for="code" class="pack-order__title">
                               Postal Code*
-                           </h4>
-                           <input type="number" name="code"  placeholder="Postal Code" class="pack-order__input" required tabindex="16">
+                           </label>
+                           <input id="code" type="number" name="code"  placeholder="Postal Code" class="pack-order__input" required tabindex="16">
                         </div>
                      </div>
                      <div class="info-order__textarea textarea-order">
-                        <h4 class="textarea-order__title">
+                        <label for="info-order__textarea" class="textarea-order__title">
                            Delivery Instruction
-                        </h4>
+                        </label>
                         <textarea name="delivery-instruction" id="info-order__textarea" placeholder="Delivery-instruction" tabindex="17"></textarea>
                      </div>
                      <div class="info-order__checkbox checkbox-order">
@@ -177,58 +177,58 @@
                      <form action="#" method="post" enctype="multipart/form-data" class="billing__form form-billing">
                         <div class="form-billing__details details-billing">
                            <div class="details-billing__pack pack-billing">
-                              <h4 class="pack-billing__title">
+                              <label for="pay_name" class="pack-billing__title">
                                  First Name*
-                              </h4>
-                              <input type="text" name="name"  placeholder="First Name" class="pack-billing__input" required tabindex="22">
+                              </label>
+                              <input id="pay_name" type="text" name="name"  placeholder="First Name" class="pack-billing__input" required tabindex="22">
                            </div>
                            <div class="details-billing__pack pack-billing">
-                              <h4 class="pack-billing__title">
+                              <label for="pay_last_name" class="pack-billing__title">
                                  Last Name*
-                              </h4>
-                              <input type="text" name="last_name"  placeholder="Last Name" class="pack-billing__input" required tabindex="23">
+                              </label>
+                              <input id="pay_last_name" type="text" name="last_name"  placeholder="Last Name" class="pack-billing__input" required tabindex="23">
                            </div>
                         </div>
                         <div class="form-billing__details details-billing">   
                            <div class="details-billing__pack pack-billing">
-                              <h4 class="pack-billing__title">
+                              <label for="pay_country" class="pack-billing__title">
                                  Country / Region*
-                              </h4>
-                              <input type="text" name="country"  placeholder="Country / Region" class="pack-billing__input" required tabindex="24">
+                              </label>
+                              <input id="pay_country" type="text" name="country"  placeholder="Country / Region" class="pack-billing__input" required tabindex="24">
                            </div>
                            <div class="details-billing__pack pack-billing">
-                              <h4 class="pack-billing__title">
+                              <label for="pay_company" class="pack-billing__title">
                                  Company Name
-                              </h4>
-                              <input type="text" name="city"  placeholder="Company (optional)" class="pack-billing__input" required tabindex="25">
+                              </label>
+                              <input id="pay_company" type="text" name="city"  placeholder="Company (optional)" class="pack-billing__input" required tabindex="25">
                            </div>
                         </div>
                         <div class="form-billing__details details-billing">
                            <div class="details-billing__pack pack-billing">
-                              <h4 class="pack-billing__title">
+                              <label for="pay_street" class="pack-billing__title">
                                  Street Address*
-                              </h4>
-                              <input type="text" name="street_address"  placeholder="House number and street name" class="pack-billing__input" required tabindex="26">
+                              </label>
+                              <input id="pay_street" type="text" name="street_address"  placeholder="House number and street name" class="pack-billing__input" required tabindex="26">
                            </div>
                            <div class="details-billing__pack pack-billing">
-                              <h4 class="pack-billing__title">
+                              <label for="pay_address" class="pack-billing__title">
                                  Apt, suite, unit
-                              </h4>
-                              <input type="text" name="address"  placeholder="apartment, suite, unit, etc. (optional)" class="pack-billing__input" required tabindex="27">
+                              </label>
+                              <input id="pay_address" type="text" name="address"  placeholder="apartment, suite, unit, etc. (optional)" class="pack-billing__input" required tabindex="27">
                            </div>
                         </div>
                         <div class="form-billing__details details-billing">
                            <div class="details-billing__pack pack-billing">
-                              <h4 class="pack-billing__title">
+                              <label for="pay_city" class="pack-billing__title">
                                  City*
-                              </h4>
-                              <input type="text" name="city"  placeholder="Town / City" class="pack-billing__input" required tabindex="28">
+                              </label>
+                              <input id="pay_city" type="text" name="city"  placeholder="Town / City" class="pack-billing__input" required tabindex="28">
                            </div>
                            <div class="details-billing__pack pack-billing">
-                              <h4 class="pack-billing__title">
+                              <label for="pay_state" class="pack-billing__title">
                                  State*
-                              </h4>
-                              <select class="pack-billing__input" name="state-list" required tabindex="29">
+                              </label>
+                              <select id="pay_state" class="pack-billing__input" name="state-list" required tabindex="29">
                                  <option value="">-----</option>
                                  <option value="">Michigan</option>
                                  <option value="">Arizona</option>
@@ -236,18 +236,18 @@
                               </select>
                            </div>
                            <div class="details-billing__pack pack-billing">
-                              <h4 class="details-billing__title">
+                              <label for="pay_code" class="details-billing__title">
                                  Postal Code*
-                              </h4>
-                              <input type="number" name="code"  placeholder="Postal Code" class="pack-billing__input" required tabindex="30">
+                              </label>
+                              <input id="pay_code" type="number" name="code"  placeholder="Postal Code" class="pack-billing__input" required tabindex="30">
                            </div>
                         </div>
                         <div class="form-billing__details details-billing">
                            <div class="details-billing__pack pack-billing">
-                              <h4 class="pack-billing__title">
+                              <label for="pay_tel" class="pack-billing__title">
                                  Phone*
-                              </h4>
-                              <input type="tel" name="phone"  placeholder="Phone" class="pack-billing__input" required tabindex="31">
+                              </label>
+                              <input id="pay_tel" type="tel" name="phone"  placeholder="Phone" class="pack-billing__input" required tabindex="31">
                            </div>
                         </div>
                         <div class="form-billing__details details-billing">
@@ -368,7 +368,7 @@
                                  </span>
                               </div>
                               <div class="box__line line">
-                                 <input type="radio" id="pol" name="method" value="03" class="line__input" checked">
+                                 <input type="radio" id="pol" name="method" value="03" class="line__input" checked>
                                  <label for="pol" class="line__label"><span class="line__label-title">Paypol</span></label>
                               </div>
                            </div>
