@@ -232,6 +232,15 @@ body {
    line-height: 1.5;
 } 
 
+.link__name:hover {
+   transform: scale(1.1);
+} 
+
+.link__img:hover {
+   border-radius: 50%;
+   transform: scale(1.2);
+}
+
 .rings-engagement__img {
    position: absolute;
    right: 0;
@@ -295,6 +304,12 @@ body {
    font-size: 16px;
    font-weight: 500;
    line-height: 1.9;
+   transition: 0.2s;
+}
+
+.block__link-button:hover {
+   background-color: #ed5721;
+   box-shadow: 0 0 10px #ed5721;
 }
 
 @media (max-width: 1023.98px) {
@@ -309,14 +324,14 @@ body {
       padding: 10px;
    }
    .card__box a {
-      margin-bottom: 0;
+      margin-bottom: 5px;
    }
    .card__img {
       margin-bottom: 5px;
    }
    .card__title,
    .card__text {
-      margin-bottom: 0;
+      margin-bottom: 5px;
    }
    .block__name {
       align-items: center;
@@ -345,7 +360,7 @@ body {
    }
    .card__box {
       flex: 0 1 100%;
-      padding: 0 24px;
+      padding: 5px 24px;
    }
    .card__box:not(:last-child){
       margin-bottom: 5px;
