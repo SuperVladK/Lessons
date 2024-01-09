@@ -391,8 +391,7 @@ body {
       font-size: 30px;
    }
    .block__list {
-      flex-wrap: wrap;
-      row-gap: 10px;
+      row-gap: 20px;
    }
    .card__title, 
    .card__text {
