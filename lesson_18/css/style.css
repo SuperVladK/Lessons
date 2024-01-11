@@ -34,7 +34,7 @@ body {
 
 .menu__logo {
    position: relative;
-   z-index: 5;
+   z-index: 8;
 }
 
 .menu__logo:hover {
@@ -220,6 +220,7 @@ body {
    width: 28px;
    height: 2px;
    border: 1px solid #000;
+   transition: all 0.3s;
 }
 
 .burger__line::before {
@@ -599,7 +600,7 @@ body {
       padding: 5px;
    }
    .menu__logo {
-      z-index: 2;
+      z-index: 7;
    }
    .menu__box {
       position: fixed;
@@ -677,7 +678,7 @@ body {
       margin-bottom: 10px;
    }
    .menu__action {
-      z-index: 2;
+      z-index: 7;
       padding-right: 60px;
    }
    .menu__burger {
