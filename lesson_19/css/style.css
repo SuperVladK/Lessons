@@ -153,18 +153,18 @@ body {
    border-radius: 12px;
 }
 
-.advertisement__block--left {
-   background-image: url(../img/bg-one.webp);
+.advertisement__block {
    background-position: top;
    background-repeat: no-repeat;
    background-size: cover;
 }
 
+.advertisement__block--left {
+   background-image: url(../img/bg-one.webp);
+}
+
 .advertisement__block--right {
    background-image: url(../img/bg-two.webp);
-   background-position: top;
-   background-repeat: no-repeat;
-   background-size: cover;
 }
 
 .advertisement__plot {
