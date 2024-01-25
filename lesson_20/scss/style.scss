@@ -549,11 +549,27 @@ $mainFontFamily: 'Inter';
 		&__item {
 			margin-bottom: 15px;
 		}
+		&__subtitle {
+			font-size: 16px;
+		}
+		&__title {
+			font-size: 22px;
+		}
+		&__text {
+			font-size: 16px;
+		}
+	}
 	.item-projects {
 		&__img {
 			margin-bottom: 10px;
 		}
-	}
+		&__title {
+			margin-bottom: 0;
+			font-size: 16px;
+		}
+		&__date {
+			font-size: 14px;
+		}
 	}
 	.burger {
 		top: 2px;

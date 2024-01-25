@@ -608,8 +608,24 @@ textarea {
   .projects__item {
     margin-bottom: 15px;
   }
-  .projects .item-projects__img {
+  .projects__subtitle {
+    font-size: 16px;
+  }
+  .projects__title {
+    font-size: 22px;
+  }
+  .projects__text {
+    font-size: 16px;
+  }
+  .item-projects__img {
     margin-bottom: 10px;
+  }
+  .item-projects__title {
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+  .item-projects__date {
+    font-size: 14px;
   }
   .burger {
     top: 2px;
