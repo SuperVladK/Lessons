@@ -199,17 +199,14 @@ textarea {
 #switcher {
   display: none;
 }
-
 #switcher:checked + .burger > .burger__line {
   -webkit-transform: rotate(135deg);
       -ms-transform: rotate(135deg);
           transform: rotate(135deg);
 }
-
 #switcher:checked + .burger > .burger__line::before {
   display: none;
 }
-
 #switcher:checked + .burger > .burger__line::after {
   -webkit-transform: rotate(-90deg);
       -ms-transform: rotate(-90deg);
@@ -495,7 +492,7 @@ textarea {
     position: absolute;
     top: -60px;
     left: 0;
-    z-index: 1px;
+    z-index: 1;
   }
   .header__menu {
     display: -webkit-box;
@@ -536,7 +533,6 @@ textarea {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     min-width: 100%;
-    min-height: 100% hv;
     position: fixed;
     top: 60px;
     left: 0;

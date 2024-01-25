@@ -132,19 +132,16 @@ $mainFontFamily: 'Inter';
 
 #switcher {
 	display: none;
-}
-
-#switcher:checked + .burger > .burger__line {
-	transform: rotate(135deg);
-}
-
-#switcher:checked + .burger > .burger__line::before {
-	display: none;
-}
-
-#switcher:checked + .burger > .burger__line::after {
-	transform: rotate(-90deg);
-	top: -1px;
+	&:checked + .burger > .burger__line {
+		transform: rotate(135deg);
+	}
+	&:checked + .burger > .burger__line::before {
+		display: none;
+	}
+	&:checked + .burger > .burger__line::after {
+		transform: rotate(-90deg);
+		top: -1px;
+	}
 }
 
 .burger {
