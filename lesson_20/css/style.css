@@ -215,29 +215,29 @@ textarea {
 
 .burger {
   position: absolute;
-  width: 26px;
-  height: 26px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: #8c8a8a;
   right: 10px;
-  top: 18px;
+  top: 0px;
   cursor: pointer;
   display: none;
 }
 .burger__line {
   position: absolute;
-  width: 18px;
+  width: 24px;
   height: 0;
   border: 1px solid black;
   top: calc(50% - 1px);
-  left: calc(50% - 9px);
+  left: calc(50% - 12px);
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
 }
 .burger__line::before, .burger__line::after {
   content: "";
   position: absolute;
-  width: 18px;
+  width: 24px;
   height: 0;
   border: 1px solid black;
   top: -6px;
@@ -520,13 +520,13 @@ textarea {
     padding-top: 10px;
   }
   .header__block {
-    padding-right: 40px;
+    padding-right: 60px;
   }
   .burger {
     display: block;
     z-index: 5;
     right: 5px;
-    top: 10px;
+    top: 4px;
   }
   #switcher:checked ~ .header__menu {
     -ms-flex-preferred-size: 100%;
@@ -561,7 +561,9 @@ textarea {
     padding: 10px;
   }
   .burger {
-    top: 7px;
+    top: 2px;
+    width: 34px;
+    height: 34px;
   }
   .page__container {
     margin-bottom: 10px;
@@ -623,6 +625,6 @@ textarea {
     font-size: 14px;
   }
   .burger {
-    top: 2px;
+    top: 0;
   }
 }

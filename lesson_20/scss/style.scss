@@ -145,12 +145,12 @@ $mainFontFamily: 'Inter';
 
 .burger {
 	position: absolute;
-	width: 26px;
-	height: 26px;
+	width: 40px;
+	height: 40px;
 	border-radius: 50%;
 	background-color: #8c8a8a;
 	right: 10px;
-	top: 18px;
+	top: 0px;
 	cursor: pointer;
 	display: none;
 
@@ -158,18 +158,18 @@ $mainFontFamily: 'Inter';
 
 	&__line {
 		position: absolute;
-		width: 18px;
+		width: 24px;
 		height: 0;
 		border: 1px solid black;
 		top: calc(50% - 1px);
-		left: calc(50% - 9px);
+		left: calc(50% - 12px);
 		transition: all 0.1s;
 	}	
 	&__line::before,
 	&__line::after {
 		content: '';
 		position: absolute;
-		width: 18px;
+		width: 24px;
 		height: 0;
 		border: 1px solid black;
 		top: -6px;
@@ -448,14 +448,14 @@ $mainFontFamily: 'Inter';
 			padding-top: 10px;
 		}
 		&__block {
-			padding-right: 40px;
+			padding-right: 60px;
 		}
 	}
 	.burger {
 		display: block;
 		z-index: 5;
 		right: 5px;
-		top: 10px;
+		top: 4px;
 	}
 	#switcher {
 		&:checked~.header__menu {
@@ -496,7 +496,9 @@ $mainFontFamily: 'Inter';
 		}
 	}
 	.burger {
-		top: 7px;
+		top: 2px;
+		width: 34px;
+		height: 34px;
 	}
 	.page {
 		&__container {
@@ -571,6 +573,6 @@ $mainFontFamily: 'Inter';
 		}
 	}
 	.burger {
-		top: 2px;
+		top: 0;
 	}
 }
