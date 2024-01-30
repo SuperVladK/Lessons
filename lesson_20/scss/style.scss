@@ -197,10 +197,8 @@ $mainFontFamily: 'Inter';
 	// .projects__head
 
 	&__head {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		row-gap: 14px;
+		max-width: 852px;
+		margin: 0 auto;
 		text-align: center;
 		margin-bottom: 47px;
 	}
@@ -210,11 +208,13 @@ $mainFontFamily: 'Inter';
 	&__subtitle {
 		display: flex;
 		column-gap: 6px;
+		justify-content: center;
 		align-items: center;
 		color: $titleColor;
 		font-family: $mainFontFamily, sans-serif;
 		font-size: 18px;
 		font-weight: 500;
+		margin-bottom: 14px;
 	}
 	&__subtitle::before {
 		content: "";
@@ -231,18 +231,18 @@ $mainFontFamily: 'Inter';
 		font-size: 40px;
 		font-weight: 700;
 		line-height: 1.21;
+		margin-bottom: 14px;
 	}
 
 	// .projects__text
 
 	&__text {
-		flex: 0 1 100%;
 		max-width: 852px;
-		max-height: 100%;
 		color: #7D7D7D;
 		font-size: 18px;
 		line-height: 1.46;
 		font-family: $mainFontFamily, sans-serif;
+		text-align: center;
 	}
 
 	// .projects__list
@@ -256,9 +256,8 @@ $mainFontFamily: 'Inter';
 
 	// .projects__item
 
-	&__item {
-		display: grid;
-	}
+	// &__item {
+	// }
 }
 .item-projects {
 
@@ -370,7 +369,7 @@ $mainFontFamily: 'Inter';
 			column-gap: 5px;
 		}
 		&__list-menu {
-			column-gap: 5px;
+			column-gap: 15px;
 		}
 		&__link-menu {
 			font-size: 17px;
@@ -394,7 +393,8 @@ $mainFontFamily: 'Inter';
 		font-size: 30px;
 		}
 		&__list {
-			gap: 20px;
+			column-gap: 20px;
+			row-gap: 35px;
 		}
 	}	
 	.item-projects {
@@ -403,7 +403,7 @@ $mainFontFamily: 'Inter';
 			flex-basis: 25px;
 		}
 		&__img {
-			margin-bottom: 15px;
+			margin-bottom: 25px;
 		}
 		&__title {
 			font-size: 16px;
@@ -412,9 +412,14 @@ $mainFontFamily: 'Inter';
 	}
 }
 
+@media (max-width:800px) {
+	.logo__name {
+		display: none;
+	}
+}
+
 @media (max-width:768px) {
 	.header {
-		margin-bottom: 10px;
 		&__logo {
 			z-index: 5;
 		}
@@ -520,15 +525,16 @@ $mainFontFamily: 'Inter';
 			font-size: 14px;
 		}
 		&__list {
-			gap: 10px;
+			column-gap: 10px;
+			row-gap: 20px;
 		}
 	}
 	.item-projects {
 		&__img {
-			margin-bottom: 5px;
+			margin-bottom: 10px;
 		}
 		&__title {
-			margin-bottom: 0;
+			margin-bottom: 5px;
 			font-size: 14px;
 		}
 		&__date {
@@ -539,9 +545,9 @@ $mainFontFamily: 'Inter';
 
 @media (max-width:380px) {
 	.header {
-		&__button {
-			display: none;
-		}
+		// &__button {
+		// 	display: none;
+		// }
 	}
 	.projects {
 		&__list {
@@ -562,10 +568,10 @@ $mainFontFamily: 'Inter';
 	}
 	.item-projects {
 		&__img {
-			margin-bottom: 10px;
+			margin-bottom: 15px;
 		}
 		&__title {
-			margin-bottom: 0;
+			margin-bottom: 5px;
 			font-size: 16px;
 		}
 		&__date {
