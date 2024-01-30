@@ -547,6 +547,9 @@ textarea {
   .projects__list {
     grid-template-columns: repeat(2, 1fr);
   }
+  .logo__name {
+    display: block;
+  }
 }
 @media (max-width: 576px) {
   .header__container {
@@ -593,7 +596,7 @@ textarea {
     font-size: 12px;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 395px) {
   .projects__list {
     display: block;
   }
@@ -621,5 +624,8 @@ textarea {
   }
   .burger {
     top: 0;
+  }
+  .logo__name {
+    display: none;
   }
 }

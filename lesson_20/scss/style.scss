@@ -489,6 +489,11 @@ $mainFontFamily: 'Inter';
 			grid-template-columns: repeat(2, 1fr);
 		}
 	}
+	.logo {
+		&__name {
+			display: block;
+		}
+	}
 }
 
 @media (max-width:576px) {
@@ -543,12 +548,7 @@ $mainFontFamily: 'Inter';
 	}
 }
 
-@media (max-width:380px) {
-	.header {
-		// &__button {
-		// 	display: none;
-		// }
-	}
+@media (max-width:395px) {
 	.projects {
 		&__list {
 			display: block;
@@ -580,5 +580,10 @@ $mainFontFamily: 'Inter';
 	}
 	.burger {
 		top: 0;
+	}
+	.logo {
+		&__name {
+			display: none;
+		}
 	}
 }
