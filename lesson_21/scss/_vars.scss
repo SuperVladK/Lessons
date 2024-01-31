@@ -1,0 +1,10 @@
+$mainFontFamily: 'Causten', sans-serif;
+$mainFontColor: #3C4242;
+$secondFontColor: #FFF;
+$mainBorderRadius: 12px;
+
+%img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
