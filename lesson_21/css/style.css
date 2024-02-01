@@ -341,26 +341,31 @@ body {
 }
 
 .hero__container {
-  position: relative;
   max-width: 1450px;
   margin: 0 auto;
-  padding: 108px 5px 10px 0;
-}
-.hero__wrap {
-  max-width: 100%;
-  max-height: 100%;
+  padding: 108px 5px 0 5px;
 }
 .hero__bg {
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  padding: 129px 0 162px 189px;
+  aspect-ratio: 1440/791;
+}
+.hero__img-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .hero__content {
-  position: absolute;
-  top: 238px;
-  left: 193px;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   max-width: 439px;
+  max-height: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -374,14 +379,11 @@ body {
           align-items: flex-start;
   font-family: "Core Sans C";
   color: #FFF;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 .hero__subtitle {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  color: #FFF;
   font-size: 32px;
   font-weight: 500;
   line-height: 1.18;
@@ -431,6 +433,7 @@ body {
   left: 45px;
   top: 50%;
   background: url(../img/icon/chevron-left.svg) 0 0/cover no-repeat;
+  z-index: 2;
 }
 .hero__bg::after {
   content: "";
