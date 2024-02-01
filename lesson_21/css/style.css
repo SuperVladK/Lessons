@@ -365,7 +365,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   max-width: 439px;
-  max-height: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -373,7 +372,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  row-gap: 5px;
+  row-gap: 10px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -433,7 +432,7 @@ body {
   left: 45px;
   top: 50%;
   background: url(../img/icon/chevron-left.svg) 0 0/cover no-repeat;
-  z-index: 2;
+  z-index: 1;
 }
 .hero__bg::after {
   content: "";

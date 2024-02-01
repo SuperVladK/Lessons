@@ -223,7 +223,6 @@ body {
 	// .hero__container
 
 	&__container {
-		// position: relative;
 		max-width: 1450px;
 		margin: 0 auto;
 		padding: 108px 5px 0 5px;
@@ -254,10 +253,9 @@ body {
 			position: relative;
 			display: flex;
 			max-width: 439px;
-			max-height: 100%;
 			flex-direction: column;
 			justify-content: space-between;
-			row-gap: 5px;
+			row-gap: 10px;
 			align-items: flex-start;
 			font-family: "Core Sans C";
 			color: $secondFontColor;
@@ -320,7 +318,7 @@ body {
 				left: 45px;
 				top: 50%;
 				background: url(../img/icon/chevron-left.svg) 0 0 / cover no-repeat;
-				z-index: 2;
+				z-index: 1;
 			}
 			&__bg::after {
 				content: "";
