@@ -347,7 +347,7 @@ body {
   display: flex;
   position: relative;
   overflow: hidden;
-  padding: 8.0625em 0 8.0625em 0;
+  padding: 8.0625em 0 8.0625em 12.0625em;
 }
 .hero__img-bg {
   position: absolute;
