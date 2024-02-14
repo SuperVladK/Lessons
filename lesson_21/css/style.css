@@ -739,6 +739,11 @@ body {
   right: 1px;
 }
 @media (max-width: 61.9988rem) {
+  .arrival .arrival-block__arrow {
+    display: none;
+  }
+}
+@media (max-width: 61.9988rem) {
   .arrival .arrival-block__title {
     margin-bottom: 2rem;
   }
