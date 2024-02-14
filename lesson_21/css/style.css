@@ -56,7 +56,7 @@
   font-weight: 800;
   font-display: swap;
 }
-.feedback .article__img, .limelight .card__img, .women-categories .card__img, .men-categories .card__img, .saving .saving-block__big-card--two, .saving .saving-block__big-card--one, .saving .saving-block__card--three, .saving .saving-block__card--two, .saving .saving-block__card--one, .arrival .card__pic, .shop__img, .hero__img-bg, .header__img-logo {
+.feedback .article__img, .limelight .card__img, .women-categories .card__go, .women-categories .card__img, .men-categories .card__img, .saving .saving-block__big-card--two, .saving .saving-block__big-card--one, .saving .saving-block__card--three, .saving .saving-block__card--two, .saving .saving-block__card--one, .arrival .card__pic, .shop__img, .hero__img-bg, .header__img-logo {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -1240,7 +1240,12 @@ body {
 }
 @media (max-width: 61.9988rem) {
   .men-categories .card__name {
-    font-size: 1.6rem;
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 36rem) {
+  .men-categories .card__name {
+    margin-bottom: 0;
   }
 }
 .men-categories .card__text {
@@ -1252,15 +1257,25 @@ body {
 }
 @media (max-width: 61.9988rem) {
   .men-categories .card__text {
-    font-size: 1.6rem;
+    font-size: 1rem;
   }
 }
 .men-categories .card__link {
+  width: 38px;
+  height: 34px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 .men-categories .card__go {
   padding: 1rem 0 1rem 1rem;
+}
+@media (max-width: 36rem) {
+  .men-categories .card__go {
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+    padding: 0;
+  }
 }
 .men-categories .card:hover .card__img {
   -webkit-transform: scale(1.1);
@@ -1350,7 +1365,12 @@ body {
 }
 @media (max-width: 61.9988rem) {
   .women-categories .card__name {
-    font-size: 1.6rem;
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 36rem) {
+  .women-categories .card__name {
+    margin-bottom: 0;
   }
 }
 .women-categories .card__text {
@@ -1362,15 +1382,25 @@ body {
 }
 @media (max-width: 61.9988rem) {
   .women-categories .card__text {
-    font-size: 1.6rem;
+    font-size: 1rem;
   }
 }
 .women-categories .card__link {
+  width: 38px;
+  height: 34px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 .women-categories .card__go {
   padding: 1rem 0 1rem 1rem;
+}
+@media (max-width: 36rem) {
+  .women-categories .card__go {
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+    padding: 0;
+  }
 }
 .women-categories .card:hover .card__img {
   -webkit-transform: scale(1.1);

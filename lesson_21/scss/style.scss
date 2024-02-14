@@ -1038,7 +1038,10 @@ body {
 			font-weight: 700;
 			line-height: 1.56;
 			@media (max-width: 61.9988rem) {
-				font-size: 1.6rem;
+				font-size: 1.25rem;
+			}
+			@media (max-width: 36rem) {
+				margin-bottom: 0;
 			}
 		}
 		// .card__text
@@ -1049,15 +1052,22 @@ body {
 			font-weight: 500;
 			line-height: 2.08;
 			@media (max-width: 61.9988rem) {
-				font-size: 1.6rem;
+				font-size: 1rem;
 			}
 		}
 		// .card__link
 		&__link {
+			width: 38px;
+			height: 34px;
 			transition: all 0.3s;
+			
 		}
 		&__go {
 			padding: 1rem 0 1rem 1rem;
+			@media (max-width: 36rem) {
+					transform: scale(1.2);
+					padding: 0;
+				}
 		}
 		&:hover .card__img {
 			transform: scale(1.1);
@@ -1148,7 +1158,10 @@ body {
 			font-weight: 700;
 			line-height: 1.56;
 			@media (max-width: 61.9988rem) {
-				font-size: 1.6rem;
+				font-size: 1.25rem;
+			}
+			@media (max-width: 36rem) {
+				margin-bottom: 0;
 			}
 		}
 
@@ -1160,18 +1173,26 @@ body {
 			font-weight: 500;
 			line-height: 2.08;
 			@media (max-width: 61.9988rem) {
-				font-size: 1.6rem;
+				font-size: 1rem;
 			}
 		}
 
 		// .card__link
-		&__link {
-			transition: all 0.3s;
-		}
-
-		&__go {
-			padding: 1rem 0 1rem 1rem;
-		}
+				&__link {
+					width: 38px;
+					height: 34px;
+					transition: all 0.3s;
+		
+				}
+		
+				&__go {
+					padding: 1rem 0 1rem 1rem;
+					@extend %img;
+					@media (max-width: 36rem) {
+						transform: scale(1.2);
+						padding: 0;
+					}
+				}
 		&:hover .card__img {
 		transform: scale(1.1);
 		}
